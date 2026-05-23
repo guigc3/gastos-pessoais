@@ -16,12 +16,16 @@ def gastos_client():
     os.makedirs(data_dir, exist_ok=True)
     data_file = os.path.join(data_dir, "gastos.json")
 
+    assinaturas_file = os.path.join(data_dir, "assinaturas.json")
+
     old = {
         "DATA_DIR": gastos_app.DATA_DIR,
         "DATA_FILE": gastos_app.DATA_FILE,
+        "ASSINATURAS_FILE": gastos_app.ASSINATURAS_FILE,
     }
     gastos_app.DATA_DIR = data_dir
     gastos_app.DATA_FILE = data_file
+    gastos_app.ASSINATURAS_FILE = assinaturas_file
 
     gastos_app.app.config["TESTING"] = True
     with gastos_app.app.test_client() as client:
@@ -242,3 +246,71 @@ class TestTemplateExcel:
             r.headers.get("Content-Type", "")
             == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         )
+
+
+def _criar_assinatura(client, **overrides):
+    payload = {
+        "descricao": "Netflix",
+        "data_inicio": "2025-01-10",
+        "data_fim": None,
+        "valor_mensal": 55.9,
+        "cartao": "Nubank",
+    }
+    payload.update(overrides)
+    return client.post("/api/assinaturas", json=payload)
+
+
+class TestAssinaturas:
+    def test_criar_listar_e_historico(self, gastos_client):
+        r = _criar_assinatura(gastos_client)
+        assert r.status_code == 201
+        body = r.get_json()
+        assert body["descricao"] == "Netflix"
+        assert body["ativa"] is True
+        assert body["historico"][0]["acao"] == "criado"
+        assert body.get("ultima_alteracao")
+
+        lista = gastos_client.get("/api/assinaturas").get_json()
+        assert len(lista["assinaturas"]) == 1
+        assert lista["total_mensal_ativas"] == 55.9
+
+        cartoes = gastos_client.get("/api/assinaturas/cartoes").get_json()
+        assert "Nubank" in cartoes["cartoes"]
+
+    def test_editar_e_excluir(self, gastos_client):
+        item_id = _criar_assinatura(gastos_client).get_json()["id"]
+        r2 = gastos_client.put(
+            f"/api/assinaturas/{item_id}",
+            json={"valor_mensal": 62.9, "descricao": "Netflix 4K"},
+        )
+        assert r2.status_code == 200
+        assert r2.get_json()["valor_mensal"] == 62.9
+
+        hist = gastos_client.get(f"/api/assinaturas/{item_id}/historico").get_json()
+        assert any(h["acao"] == "editado" for h in hist["historico"])
+
+        r_del = gastos_client.delete(f"/api/assinaturas/{item_id}")
+        assert r_del.status_code == 200
+        assert len(gastos_client.get("/api/assinaturas").get_json()["assinaturas"]) == 0
+
+    def test_data_fim_invalida(self, gastos_client):
+        r = _criar_assinatura(
+            gastos_client,
+            data_inicio="2025-06-01",
+            data_fim="2025-01-01",
+        )
+        assert r.status_code == 400
+
+    def test_filtro_ativas(self, gastos_client):
+        _criar_assinatura(gastos_client, descricao="Ativa")
+        _criar_assinatura(
+            gastos_client,
+            descricao="Encerrada",
+            data_inicio="2024-01-01",
+            data_fim="2024-12-31",
+        )
+        todas = gastos_client.get("/api/assinaturas").get_json()["assinaturas"]
+        assert len(todas) == 2
+        ativas = gastos_client.get("/api/assinaturas?ativas=1").get_json()["assinaturas"]
+        assert len(ativas) == 1
+        assert ativas[0]["descricao"] == "Ativa"

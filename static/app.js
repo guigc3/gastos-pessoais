@@ -332,9 +332,9 @@ function rowHtml(item, tipo) {
             <td>${emoji}${escapeHtml(item.descricao || "")}${item.observacao ? `<br><small>${escapeHtml(item.observacao)}</small>` : ""}${ultimaAlt}${tagsBlock ? `<br>${tagsBlock}` : ""}</td>
             <td class="col-valor ${cls}">${fmt.format(item.valor)}</td>
             <td class="col-acoes">
-                <button type="button" class="btn-hist" data-id="${item.id}" title="Ver histórico" aria-label="Histórico">🔍</button>
-                <button type="button" class="btn btn-ghost btn-sm btn-edit" data-id="${item.id}">Editar</button>
-                <button type="button" class="btn btn-danger btn-del" data-id="${item.id}">Excluir</button>
+                <button type="button" class="btn btn-ghost btn-sm btn-hist" data-id="${item.id}" title="Histórico" aria-label="Histórico">📋</button>
+                <button type="button" class="btn btn-ghost btn-sm btn-edit" data-id="${item.id}" title="Editar" aria-label="Editar">✏️</button>
+                <button type="button" class="btn btn-danger btn-sm btn-del" data-id="${item.id}" title="Excluir" aria-label="Excluir">🗑</button>
             </td>
         </tr>
     `;

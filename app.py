@@ -18,6 +18,7 @@ CORS(app)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 DATA_FILE = os.path.join(DATA_DIR, "gastos.json")
+ASSINATURAS_FILE = os.path.join(DATA_DIR, "assinaturas.json")
 
 LOCK_TIMEOUT = 5.0
 MAX_RETRIES = 15
@@ -1119,11 +1120,254 @@ def import_excel():
     })
 
 
+# ── Assinaturas / custos recorrentes (cartão) ─────────────────────
+
+
+def default_assinaturas_data():
+    return {"cartoes": [], "assinaturas": []}
+
+
+def get_assinaturas_data():
+    data = safe_read_json(ASSINATURAS_FILE)
+    if data is None:
+        data = default_assinaturas_data()
+        safe_write_json(ASSINATURAS_FILE, data)
+    data.setdefault("cartoes", [])
+    data.setdefault("assinaturas", [])
+    return data
+
+
+def save_assinaturas_data(data):
+    safe_write_json(ASSINATURAS_FILE, data)
+
+
+def _parse_iso_date(value, field_name, required=False):
+    if value is None or (isinstance(value, str) and not value.strip()):
+        if required:
+            raise ValueError(f"Campo '{field_name}' obrigatorio")
+        return None
+    s = str(value).strip()[:10]
+    try:
+        datetime.strptime(s, "%Y-%m-%d")
+    except ValueError:
+        raise ValueError(f"Data invalida em '{field_name}' (use AAAA-MM-DD)")
+    return s
+
+
+def _assinatura_snapshot(item):
+    return {
+        k: item.get(k)
+        for k in (
+            "descricao",
+            "data_inicio",
+            "data_fim",
+            "valor_mensal",
+            "cartao",
+        )
+    }
+
+
+def _assinatura_ultima_alteracao(item):
+    historico = item.get("historico") or []
+    if historico:
+        return historico[-1].get("ts")
+    return item.get("criado_em")
+
+
+def _assinatura_ativa(item, ref_date=None):
+    fim = item.get("data_fim")
+    if not fim:
+        return True
+    ref = ref_date or datetime.now().strftime("%Y-%m-%d")
+    return fim >= ref
+
+
+def _enrich_assinatura(item):
+    return {
+        **item,
+        "ultima_alteracao": _assinatura_ultima_alteracao(item),
+        "ativa": _assinatura_ativa(item),
+    }
+
+
+def _registrar_cartao(data, nome):
+    cartao = (nome or "").strip()
+    if not cartao:
+        return
+    cartoes = data.setdefault("cartoes", [])
+    if not any(c.lower() == cartao.lower() for c in cartoes):
+        cartoes.append(cartao)
+        cartoes.sort(key=str.lower)
+
+
+def _validar_datas_assinatura(data_inicio, data_fim):
+    inicio = _parse_iso_date(data_inicio, "data_inicio", required=True)
+    fim = _parse_iso_date(data_fim, "data_fim", required=False)
+    if fim and fim < inicio:
+        raise ValueError("data_fim nao pode ser anterior a data_inicio")
+    return inicio, fim
+
+
+@app.route("/api/assinaturas/cartoes")
+def list_cartoes_assinaturas():
+    data = get_assinaturas_data()
+    return jsonify({"cartoes": sorted(data.get("cartoes", []), key=str.lower)})
+
+
+@app.route("/api/assinaturas")
+def list_assinaturas():
+    cartao = (request.args.get("cartao") or "").strip() or None
+    apenas_ativas = request.args.get("ativas", "").lower() in ("1", "true", "sim")
+    data = get_assinaturas_data()
+    items = list(data.get("assinaturas", []))
+    if cartao:
+        items = [a for a in items if (a.get("cartao") or "").lower() == cartao.lower()]
+    if apenas_ativas:
+        items = [a for a in items if _assinatura_ativa(a)]
+    items.sort(key=lambda a: ((a.get("cartao") or "").lower(), (a.get("descricao") or "").lower()))
+    enriched = [_enrich_assinatura(a) for a in items]
+    total_mensal_ativas = round(
+        sum(float(a.get("valor_mensal") or 0) for a in enriched if a.get("ativa")), 2
+    )
+    return jsonify({"assinaturas": enriched, "total_mensal_ativas": total_mensal_ativas})
+
+
+@app.route("/api/assinaturas", methods=["POST"])
+def create_assinatura():
+    body = request.get_json(silent=True) or {}
+    descricao = (body.get("descricao") or "").strip()
+    cartao = (body.get("cartao") or "").strip()
+    if not descricao:
+        return jsonify({"error": "Informe a descricao"}), 400
+    if not cartao:
+        return jsonify({"error": "Informe o cartao de credito"}), 400
+    try:
+        data_inicio, data_fim = _validar_datas_assinatura(
+            body.get("data_inicio"), body.get("data_fim")
+        )
+    except ValueError as exc:
+        return jsonify({"error": str(exc)}), 400
+    try:
+        valor_mensal = round(float(body.get("valor_mensal")), 2)
+    except (TypeError, ValueError):
+        return jsonify({"error": "Valor mensal invalido"}), 400
+    if valor_mensal <= 0:
+        return jsonify({"error": "Valor mensal deve ser maior que zero"}), 400
+
+    data = get_assinaturas_data()
+    now = datetime.now().isoformat(timespec="seconds")
+    item = {
+        "id": str(uuid.uuid4()),
+        "descricao": descricao,
+        "data_inicio": data_inicio,
+        "data_fim": data_fim,
+        "valor_mensal": valor_mensal,
+        "cartao": cartao,
+        "criado_em": now,
+        "historico": [],
+    }
+    item["historico"].append(_log_entry("criado", depois=_assinatura_snapshot(item)))
+    data["assinaturas"].append(item)
+    _registrar_cartao(data, cartao)
+    save_assinaturas_data(data)
+    return jsonify(_enrich_assinatura(item)), 201
+
+
+@app.route("/api/assinaturas/<item_id>", methods=["PUT"])
+def update_assinatura(item_id):
+    body = request.get_json(silent=True) or {}
+    data = get_assinaturas_data()
+    item = next((a for a in data["assinaturas"] if a.get("id") == item_id), None)
+    if not item:
+        return jsonify({"error": "Assinatura nao encontrada"}), 404
+
+    antes = _assinatura_snapshot(item)
+    campos_alterados_antes = {}
+    campos_alterados_depois = {}
+
+    def _track(campo, valor_novo):
+        velho = item.get(campo)
+        if velho != valor_novo:
+            campos_alterados_antes[campo] = velho
+            campos_alterados_depois[campo] = valor_novo
+
+    if "descricao" in body:
+        descricao = (body.get("descricao") or "").strip()
+        if not descricao:
+            return jsonify({"error": "Informe a descricao"}), 400
+        _track("descricao", descricao)
+        item["descricao"] = descricao
+
+    if "cartao" in body:
+        cartao = (body.get("cartao") or "").strip()
+        if not cartao:
+            return jsonify({"error": "Informe o cartao de credito"}), 400
+        _track("cartao", cartao)
+        item["cartao"] = cartao
+        _registrar_cartao(data, cartao)
+
+    if "valor_mensal" in body:
+        try:
+            valor_mensal = round(float(body["valor_mensal"]), 2)
+        except (TypeError, ValueError):
+            return jsonify({"error": "Valor mensal invalido"}), 400
+        if valor_mensal <= 0:
+            return jsonify({"error": "Valor mensal deve ser maior que zero"}), 400
+        _track("valor_mensal", valor_mensal)
+        item["valor_mensal"] = valor_mensal
+
+    if "data_inicio" in body or "data_fim" in body:
+        try:
+            data_inicio, data_fim = _validar_datas_assinatura(
+                body.get("data_inicio", item.get("data_inicio")),
+                body.get("data_fim", item.get("data_fim")),
+            )
+        except ValueError as exc:
+            return jsonify({"error": str(exc)}), 400
+        _track("data_inicio", data_inicio)
+        _track("data_fim", data_fim)
+        item["data_inicio"] = data_inicio
+        item["data_fim"] = data_fim
+
+    if campos_alterados_antes:
+        item.setdefault("historico", []).append(
+            _log_entry("editado", antes=campos_alterados_antes, depois=campos_alterados_depois)
+        )
+
+    save_assinaturas_data(data)
+    return jsonify(_enrich_assinatura(item))
+
+
+@app.route("/api/assinaturas/<item_id>/historico")
+def get_assinatura_historico(item_id):
+    data = get_assinaturas_data()
+    item = next((a for a in data["assinaturas"] if a.get("id") == item_id), None)
+    if not item:
+        return jsonify({"error": "Assinatura nao encontrada"}), 404
+    return jsonify({
+        "id": item_id,
+        "descricao": item.get("descricao") or "",
+        "historico": list(reversed(item.get("historico", []))),
+    })
+
+
+@app.route("/api/assinaturas/<item_id>", methods=["DELETE"])
+def delete_assinatura(item_id):
+    data = get_assinaturas_data()
+    item = next((a for a in data["assinaturas"] if a.get("id") == item_id), None)
+    if not item:
+        return jsonify({"error": "Assinatura nao encontrada"}), 404
+    data["assinaturas"] = [a for a in data["assinaturas"] if a.get("id") != item_id]
+    save_assinaturas_data(data)
+    return jsonify({"ok": True})
+
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", "5001"))
     print("=" * 60)
     print("  Controle de Gastos Pessoais")
     print(f"  Dados: {DATA_FILE}")
+    print(f"  Assinaturas: {ASSINATURAS_FILE}")
     print(f"  Servidor: http://localhost:{port}")
     print("=" * 60)
     app.run(host="0.0.0.0", port=port, debug=False)

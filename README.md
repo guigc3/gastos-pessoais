@@ -29,7 +29,8 @@ py -m pytest tests -v
 ```
 app.py              # API Flask (porta 5001)
 import_excel.py     # Importação a partir de planilha Excel
-data/gastos.json    # Persistência JSON (dados locais)
+data/gastos.json        # Persistência JSON (lançamentos mensais)
+data/assinaturas.json   # Assinaturas / recorrentes no cartão
 static/             # Frontend (HTML, CSS, JS)
 tests/test_api.py   # 16 testes da API
 ```
@@ -40,6 +41,7 @@ tests/test_api.py   # 16 testes da API
 
 ## Funcionalidades (resumo)
 
+- **Aba Assinaturas** — controle de assinaturas e custos recorrentes no cartão (independente dos lançamentos mensais)
 - CRUD de receitas/despesas, seções, tags, gráfico anual, modo escuro
 - Despesas **pagas** e receitas **investidas** (afetam caixa disponível)
 - Lixeira, limpar mês, meses revisados, histórico por lançamento

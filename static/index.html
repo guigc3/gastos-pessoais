@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
     <script src="app.js" defer></script>
+    <script src="assinaturas.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -16,11 +17,11 @@
             <span class="logo-accent">$</span>
             <div>
                 <h1>Controle de Gastos</h1>
-                <p class="subtitle">Receitas, despesas e saldo mensal</p>
+                <p class="subtitle" id="headerSubtitle">Receitas, despesas e saldo mensal</p>
             </div>
         </div>
         <div class="header-actions">
-            <label class="field-inline">
+            <label class="field-inline gastos-only">
                 Ano
                 <div class="field-with-action ano-wrapper">
                     <select id="anoSelect"></select>
@@ -30,22 +31,28 @@
             </label>
             <button type="button" class="btn-theme-toggle" id="btnTheme" title="Alternar modo escuro" aria-label="Alternar tema"></button>
             <div class="header-buttons">
-                <button type="button" class="btn btn-ghost" id="btnDownloadTemplate" title="Baixar modelo Excel">
+                <button type="button" class="btn btn-primary assinaturas-only hidden" id="btnNovaAssinatura">+ Nova assinatura</button>
+                <button type="button" class="btn btn-ghost gastos-only" id="btnDownloadTemplate" title="Baixar modelo Excel">
                     <span class="btn-icon-inline">⬇</span> Modelo
                 </button>
-                <button type="button" class="btn btn-ghost" id="btnImportExcel" title="Importar lançamentos de Excel">
+                <button type="button" class="btn btn-ghost gastos-only" id="btnImportExcel" title="Importar lançamentos de Excel">
                     <span class="btn-icon-inline">⬆</span> Importar
                 </button>
-                <button type="button" class="btn btn-ghost" id="btnLixeira" title="Lixeira — lançamentos excluídos">
+                <button type="button" class="btn btn-ghost gastos-only" id="btnLixeira" title="Lixeira — lançamentos excluídos">
                     🗑 Lixeira
                 </button>
                 <input type="file" id="fileExcel" accept=".xlsx,.xls" style="display:none">
-                <button type="button" class="btn btn-primary" id="btnNovo">+ Novo lançamento</button>
+                <button type="button" class="btn btn-primary gastos-only" id="btnNovo">+ Novo lançamento</button>
             </div>
         </div>
     </header>
 
-    <main class="container">
+    <nav class="app-tabs container" id="appTabs" aria-label="Seções do aplicativo">
+        <button type="button" class="app-tab active" data-view="gastos">Gastos mensais</button>
+        <button type="button" class="app-tab" data-view="assinaturas">Assinaturas</button>
+    </nav>
+
+    <main class="container view-gastos" id="viewGastos">
         <nav class="month-tabs" id="monthTabs" aria-label="Meses"></nav>
 
         <section class="summary-cards" id="summaryCards">
@@ -113,6 +120,42 @@
                 <div id="despesasContainer"></div>
             </section>
         </div>
+    </main>
+
+    <main class="container view-assinaturas hidden" id="viewAssinaturas">
+        <section class="summary-cards assinaturas-summary">
+            <article class="card card-orcamento">
+                <span class="card-label">Total mensal (ativas)</span>
+                <span class="card-hint">Assinaturas sem data fim ou com fim futuro</span>
+                <strong class="card-value" id="assinaturasTotalMensal">R$ 0,00</strong>
+            </article>
+            <article class="card card-saida">
+                <span class="card-label">Cadastradas</span>
+                <strong class="card-value" id="assinaturasTotalQtd">0</strong>
+            </article>
+            <article class="card card-pendente">
+                <span class="card-label">Ativas</span>
+                <strong class="card-value" id="assinaturasTotalAtivas">0</strong>
+            </article>
+        </section>
+
+        <section class="panel">
+            <div class="panel-header">
+                <div class="panel-header-title">
+                    <h2>Assinaturas e recorrentes no cartão</h2>
+                    <span class="chart-subtitle">Controle independente do lançamento mensal</span>
+                </div>
+                <label class="field-inline assinaturas-filter">
+                    Cartão
+                    <select id="filtroCartaoAssinaturas">
+                        <option value="">Todos</option>
+                    </select>
+                </label>
+            </div>
+            <div class="table-wrap" id="assinaturasTableWrap">
+                <div class="empty-state" style="padding:40px">Carregando…</div>
+            </div>
+        </section>
     </main>
 
     <dialog id="modalLancamento" class="modal">
@@ -209,6 +252,46 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" id="btnCancelarAno">Cancelar</button>
                 <button type="submit" class="btn btn-primary">Criar</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog id="modalAssinatura" class="modal">
+        <form id="formAssinatura" method="dialog">
+            <div class="modal-header">
+                <h3 id="modalAssinaturaTitle">Nova assinatura</h3>
+                <button type="button" class="btn-icon" id="btnFecharModalAssinatura" aria-label="Fechar">&times;</button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="assinaturaId">
+                <label>
+                    Descrição
+                    <input type="text" id="assinaturaDescricao" maxlength="120" required placeholder="Ex.: Netflix, Spotify, iCloud">
+                </label>
+                <div class="form-row-2">
+                    <label>
+                        Data de início
+                        <input type="date" id="assinaturaDataInicio" required>
+                    </label>
+                    <label>
+                        Data fim
+                        <input type="date" id="assinaturaDataFim">
+                        <small class="field-hint">Opcional — deixe vazio se ainda ativa</small>
+                    </label>
+                </div>
+                <label>
+                    Valor mensal (R$)
+                    <input type="number" id="assinaturaValorMensal" min="0.01" step="0.01" required>
+                </label>
+                <label>
+                    Cartão de crédito
+                    <input type="text" id="assinaturaCartao" maxlength="80" required placeholder="Ex.: Nubank, Itaú" list="cartoesAssinaturaList">
+                    <datalist id="cartoesAssinaturaList"></datalist>
+                </label>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="btnCancelarAssinatura">Cancelar</button>
+                <button type="submit" class="btn btn-primary">Salvar</button>
             </div>
         </form>
     </dialog>
