@@ -1,0 +1,3986 @@
+{
+  "categorias_receita": [
+    {
+      "id": "6ee5f2d6-fad0-4cc6-a405-387a12d82545",
+      "nome": "SALARIO FEH",
+      "cor": "#27ae60"
+    },
+    {
+      "id": "06dc66dd-a1fc-49b9-a039-f336709a76b2",
+      "nome": "SALARIO GUI",
+      "cor": "#27ae60"
+    },
+    {
+      "id": "6efb5542-3462-41b8-a4a7-6dafe29655b2",
+      "nome": "Santander Fe",
+      "cor": "#27ae60"
+    },
+    {
+      "id": "ac84a197-10b3-42e0-94bc-2eaa8767005f",
+      "nome": "XP GUI",
+      "cor": "#27ae60"
+    }
+  ],
+  "categorias_despesa": [
+    {
+      "id": "03c7692a-004f-4dec-80e1-0b9027bec0f3",
+      "nome": "Agua/Luz",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "198ec019-eac6-4fae-b38f-036e51861103",
+      "nome": "Carro",
+      "secao": "Outros",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "7862b936-05b2-4fdb-9dc8-695216d1b5f6",
+      "nome": "Celular Gui/Feh",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "47c46630-2395-4288-a9d2-0562e3ebcd28",
+      "nome": "Condominio casa nova",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "bea6404e-f503-47b0-8729-111de57409d4",
+      "nome": "FINANCIAMENTO CARRO",
+      "secao": "Outros",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "8dc8b0bc-0032-472e-9f61-50112c7588b0",
+      "nome": "Financiamento casa",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "1e8f50d1-dd3f-47d7-b6f7-7c1b0e4244d7",
+      "nome": "INGRESSOS LIPE",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "d0973db7-97e1-4f81-9eaa-fc3573ca5154",
+      "nome": "INGRESSOS LIPE]",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "b13bac2d-d63d-42bd-85f2-d04e264ce94b",
+      "nome": "ITAU",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "40ee6090-fa52-46d2-8c5f-6c9173b81b50",
+      "nome": "Internet",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "5442bbad-7b41-48ed-b9ff-2bb42e053ce7",
+      "nome": "Itau",
+      "secao": "Outros",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "aa15b6c8-95c0-41c5-b490-f1cb503d906c",
+      "nome": "Itaú click",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "821512d9-957a-4010-b1e8-559e019a52c6",
+      "nome": "LUCIA",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "4da7ee06-de48-422f-9490-4630192639d6",
+      "nome": "NU FE",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "39dda192-d856-4681-a7ae-9657e31683e4",
+      "nome": "NU Gui",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "ab29d55b-35f3-4728-a3df-236f80796c1c",
+      "nome": "Nubank",
+      "secao": "Outros",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "3892f7f3-6a04-40e3-990d-27928db2f08e",
+      "nome": "Nubank Gui",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "55977ba4-c8ac-4455-82c5-8a9a8c5dffa6",
+      "nome": "PORTOBANK",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "93ca3231-98dd-4eee-b027-31362d032071",
+      "nome": "Pilates",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "e194d082-2ead-4d0a-a717-49383abf83af",
+      "nome": "SANTANDER 2",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "a59fa78a-60bd-4748-af78-9afd28ce1fd8",
+      "nome": "SANTANDER 6246",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "d8b3d409-2e10-4125-8bf3-6213b3affb71",
+      "nome": "Santander 1",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "279c84fd-0268-4644-884f-b80cfc61ff8d",
+      "nome": "Santander 2",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "4bf8dd7b-e8d6-40bb-a251-672dbe78ddba",
+      "nome": "Seguro Carro",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "0ad29014-956a-4021-bc5c-3e0b655899bf",
+      "nome": "XP GUI",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "b6341042-b6b0-4896-b6dd-33a9db128567",
+      "nome": "psicologa",
+      "secao": "Despesas fixas",
+      "cor": "#e74c3c"
+    },
+    {
+      "id": "7ea8338b-8c7d-48d0-bdf5-17a2dfbb468e",
+      "nome": "sANTANDER",
+      "secao": "Outros",
+      "cor": "#e74c3c"
+    }
+  ],
+  "secoes_despesa": [
+    "Despesas fixas",
+    "Outros",
+    "Maycon Gay",
+    "Moradia",
+    "Cartões Gui",
+    "Fe",
+    "Viagem",
+    "Cartões Fe",
+    "Casa"
+  ],
+  "lancamentos": [
+    {
+      "id": "72a20be1-b95f-483f-a8c9-ec18ee147b4f",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "receita",
+      "descricao": "Salário 13",
+      "secao": "Gui",
+      "valor": 7852.0,
+      "observacao": "",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T10:15:59"
+    },
+    {
+      "id": "e9e4446e-422b-4ede-b844-5065ae609437",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "receita",
+      "descricao": "Saldo XP",
+      "secao": "Gui",
+      "valor": 12000.0,
+      "observacao": "",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T10:15:59"
+    },
+    {
+      "id": "3d27b1c1-b212-4a92-94c7-0a0a956e3fab",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "receita",
+      "descricao": "Saldo Nubank",
+      "secao": "Gui",
+      "valor": 1153.0,
+      "observacao": "",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T10:15:59"
+    },
+    {
+      "id": "f2611ca9-750a-4b99-a809-e4e41b51b0ad",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "receita",
+      "descricao": "Saldo Itaú",
+      "secao": "Gui",
+      "valor": 355.0,
+      "observacao": "",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T10:15:59"
+    },
+    {
+      "id": "0b894ad3-f705-4d3e-8755-75b1eae1f1c3",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "Nubank Gui",
+      "secao": "Cartões Gui",
+      "valor": 6511.0,
+      "observacao": "",
+      "tags": [
+        "Cartões",
+        "Gui"
+      ],
+      "criado_em": "2026-05-23T10:15:59"
+    },
+    {
+      "id": "fbfa2226-72b0-4861-8df2-d06bc8af1ff1",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "Banco XP",
+      "secao": "Cartões Gui",
+      "valor": 4630.0,
+      "observacao": "",
+      "tags": [
+        "Cartões",
+        "Gui"
+      ],
+      "criado_em": "2026-05-23T10:15:59"
+    },
+    {
+      "id": "3233d68f-481d-4f69-8d72-964fa5c5c89d",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "PortoBank",
+      "secao": "Cartões Gui",
+      "valor": 433.0,
+      "observacao": "",
+      "tags": [
+        "Cartões",
+        "Gui"
+      ],
+      "criado_em": "2026-05-23T10:15:59"
+    },
+    {
+      "id": "4ca52158-7df7-47a8-bf77-15cfa32fb57f",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "Itaú 1",
+      "secao": "Cartões Gui",
+      "valor": 946.0,
+      "observacao": "",
+      "tags": [
+        "Cartões",
+        "Gui"
+      ],
+      "criado_em": "2026-05-23T10:15:59",
+      "pago": false,
+      "historico": [
+        {
+          "ts": "2026-05-23T11:54:11",
+          "acao": "pago",
+          "antes": {
+            "pago": null
+          },
+          "depois": {
+            "pago": true
+          }
+        },
+        {
+          "ts": "2026-05-23T12:08:32",
+          "acao": "despago",
+          "antes": {
+            "pago": true
+          },
+          "depois": {
+            "pago": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "2f8bfb58-7eb8-4271-93a6-5201e932fa05",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "Itaú 2",
+      "secao": "Cartões Gui",
+      "valor": 1678.0,
+      "observacao": "",
+      "tags": [
+        "Cartões",
+        "Gui"
+      ],
+      "criado_em": "2026-05-23T10:15:59"
+    },
+    {
+      "id": "b8754436-258d-4a74-b2cb-4b9b2252f7aa",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Gui",
+      "valor": 10700.0,
+      "observacao": "",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "8c6eb5e5-f54b-4728-9e7d-2088e75d256b",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Gui",
+      "valor": 10700.0,
+      "observacao": "",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "992711f5-9433-4a00-8e40-cd55e31640cd",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Fe",
+      "valor": 9700.0,
+      "observacao": "",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "8cb209f8-ca63-46d6-b71c-61ebcf414aba",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Fe",
+      "valor": 9700.0,
+      "observacao": "",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "dfe9d7b2-b344-4b98-ba38-b974319c8ceb",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "despesa",
+      "descricao": "Nubank Gui",
+      "secao": "Cartões Gui",
+      "valor": 4860.0,
+      "observacao": "Previsão",
+      "tags": [
+        "Cartões",
+        "Gui"
+      ],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "295a6e0e-75fa-4b9f-b518-3b39fecd96b6",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "despesa",
+      "descricao": "Banco XP",
+      "secao": "Cartões Gui",
+      "valor": 384.6,
+      "observacao": "Previsão",
+      "tags": [
+        "Cartões",
+        "Gui"
+      ],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "42a1088f-6586-470a-8300-23564ca399f9",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "despesa",
+      "descricao": "PortoBank",
+      "secao": "Cartões Gui",
+      "valor": 340.0,
+      "observacao": "Previsão",
+      "tags": [
+        "Cartões",
+        "Gui"
+      ],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "72f08642-c50d-46cd-bd41-c6a4ff9e0cf9",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "despesa",
+      "descricao": "Itaú 1",
+      "secao": "Cartões Gui",
+      "valor": 946.0,
+      "observacao": "Previsão",
+      "tags": [
+        "Cartões",
+        "Gui"
+      ],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "b2275b5d-4adc-459b-a3fc-a436850878b0",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "Emprestimo",
+      "secao": "Fe",
+      "valor": 2800.0,
+      "observacao": "",
+      "tags": [
+        "Fe",
+        "Emprestimo"
+      ],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "65cc39fd-6b78-469b-87a1-2913760960f6",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "despesa",
+      "descricao": "Emprestimo",
+      "secao": "Fe",
+      "valor": 2800.0,
+      "observacao": "",
+      "tags": [
+        "Fe",
+        "Emprestimo"
+      ],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "dbb1eef1-74fa-45eb-a56a-9d784c3f8dcd",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "Carro Felipe",
+      "secao": "Outros",
+      "valor": 2500.0,
+      "observacao": "",
+      "tags": [],
+      "criado_em": "2026-05-23T10:45:26",
+      "historico": [
+        {
+          "ts": "2026-05-23T10:56:32",
+          "acao": "editado",
+          "antes": {
+            "valor": 2500.0
+          },
+          "depois": {
+            "valor": 2501.0
+          }
+        },
+        {
+          "ts": "2026-05-23T11:28:55",
+          "acao": "editado",
+          "antes": {
+            "valor": 2501.0
+          },
+          "depois": {
+            "valor": 2500.0
+          }
+        },
+        {
+          "ts": "2026-05-23T11:30:47",
+          "acao": "editado",
+          "antes": {
+            "valor": 2500.0
+          },
+          "depois": {
+            "valor": 2501.0
+          }
+        },
+        {
+          "ts": "2026-05-23T11:34:19",
+          "acao": "editado",
+          "antes": {
+            "valor": 2501.0
+          },
+          "depois": {
+            "valor": 2500.0
+          }
+        },
+        {
+          "ts": "2026-05-23T11:49:45",
+          "acao": "pago",
+          "antes": {
+            "pago": null
+          },
+          "depois": {
+            "pago": true
+          }
+        },
+        {
+          "ts": "2026-05-23T11:49:49",
+          "acao": "despago",
+          "antes": {
+            "pago": true
+          },
+          "depois": {
+            "pago": false
+          }
+        },
+        {
+          "ts": "2026-05-23T11:58:52",
+          "acao": "pago",
+          "antes": {
+            "pago": false
+          },
+          "depois": {
+            "pago": true
+          }
+        },
+        {
+          "ts": "2026-05-23T11:58:57",
+          "acao": "despago",
+          "antes": {
+            "pago": true
+          },
+          "depois": {
+            "pago": false
+          }
+        },
+        {
+          "ts": "2026-05-23T12:08:14",
+          "acao": "pago",
+          "antes": {
+            "pago": false
+          },
+          "depois": {
+            "pago": true
+          }
+        },
+        {
+          "ts": "2026-05-23T12:08:16",
+          "acao": "despago",
+          "antes": {
+            "pago": true
+          },
+          "depois": {
+            "pago": false
+          }
+        },
+        {
+          "ts": "2026-05-23T12:08:21",
+          "acao": "pago",
+          "antes": {
+            "pago": false
+          },
+          "depois": {
+            "pago": true
+          }
+        },
+        {
+          "ts": "2026-05-23T12:08:22",
+          "acao": "despago",
+          "antes": {
+            "pago": true
+          },
+          "depois": {
+            "pago": false
+          }
+        },
+        {
+          "ts": "2026-05-23T12:08:23",
+          "acao": "pago",
+          "antes": {
+            "pago": false
+          },
+          "depois": {
+            "pago": true
+          }
+        },
+        {
+          "ts": "2026-05-23T12:08:25",
+          "acao": "despago",
+          "antes": {
+            "pago": true
+          },
+          "depois": {
+            "pago": false
+          }
+        },
+        {
+          "ts": "2026-05-23T14:49:26",
+          "acao": "pago",
+          "antes": {
+            "pago": false
+          },
+          "depois": {
+            "pago": true
+          }
+        },
+        {
+          "ts": "2026-05-23T14:49:27",
+          "acao": "despago",
+          "antes": {
+            "pago": true
+          },
+          "depois": {
+            "pago": false
+          }
+        },
+        {
+          "ts": "2026-05-23T14:49:28",
+          "acao": "pago",
+          "antes": {
+            "pago": false
+          },
+          "depois": {
+            "pago": true
+          }
+        },
+        {
+          "ts": "2026-05-23T14:49:29",
+          "acao": "despago",
+          "antes": {
+            "pago": true
+          },
+          "depois": {
+            "pago": false
+          }
+        },
+        {
+          "ts": "2026-05-23T14:53:01",
+          "acao": "pago",
+          "antes": {
+            "pago": false
+          },
+          "depois": {
+            "pago": true
+          }
+        },
+        {
+          "ts": "2026-05-23T14:53:04",
+          "acao": "despago",
+          "antes": {
+            "pago": true
+          },
+          "depois": {
+            "pago": false
+          }
+        },
+        {
+          "ts": "2026-05-23T14:54:01",
+          "acao": "pago",
+          "antes": {
+            "pago": false
+          },
+          "depois": {
+            "pago": true
+          }
+        },
+        {
+          "ts": "2026-05-23T14:54:03",
+          "acao": "despago",
+          "antes": {
+            "pago": true
+          },
+          "depois": {
+            "pago": false
+          }
+        }
+      ],
+      "pago": false
+    },
+    {
+      "id": "904ecdc9-afaa-4a43-962c-78fe29c0be04",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "Passagem Europa - Felipe",
+      "secao": "Viagem",
+      "valor": 1270.0,
+      "observacao": "2 de 10",
+      "tags": [
+        "Viagem"
+      ],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "81a9add9-7ed1-4aac-a7b4-0cffa59a44d0",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "despesa",
+      "descricao": "Carro Felipe",
+      "secao": "Outros",
+      "valor": 2500.0,
+      "observacao": "",
+      "tags": [],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "97df3c97-e729-4d9d-8491-b7d9e55c8e13",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "despesa",
+      "descricao": "Passagem Europa - Felipe",
+      "secao": "Viagem",
+      "valor": 1270.0,
+      "observacao": "3 de 10",
+      "tags": [
+        "Viagem"
+      ],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "93aa78b7-10ce-4648-a48b-9290154defed",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "Nubank Fe",
+      "secao": "Cartões Fe",
+      "valor": 2430.0,
+      "observacao": "",
+      "tags": [
+        "Cartões",
+        "Fe"
+      ],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "9c774891-9690-4efb-9a84-f876d8f70f9f",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "Santander 1",
+      "secao": "Cartões Fe",
+      "valor": 2750.0,
+      "observacao": "Elite",
+      "tags": [
+        "Cartões",
+        "Fe"
+      ],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "27e30e4f-7eab-4bcc-bb7b-abaf72010c4d",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "despesa",
+      "descricao": "Nubank Fe",
+      "secao": "Cartões Fe",
+      "valor": 240.0,
+      "observacao": "",
+      "tags": [
+        "Cartões",
+        "Fe"
+      ],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "06059a31-eff8-4c3a-8510-07e6fe85afca",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "Santander 2",
+      "secao": "Cartões Fe",
+      "valor": 117.0,
+      "observacao": "SX",
+      "tags": [
+        "Cartões",
+        "Fe"
+      ],
+      "criado_em": "2026-05-23T10:45:26",
+      "pago": false,
+      "historico": [
+        {
+          "ts": "2026-05-23T11:44:35",
+          "acao": "pago",
+          "antes": {
+            "pago": null
+          },
+          "depois": {
+            "pago": true
+          }
+        },
+        {
+          "ts": "2026-05-23T11:44:37",
+          "acao": "despago",
+          "antes": {
+            "pago": true
+          },
+          "depois": {
+            "pago": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "47b58673-1a78-44fb-978c-157310f88bd1",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "despesa",
+      "descricao": "Santander 1",
+      "secao": "Cartões Fe",
+      "valor": 1152.0,
+      "observacao": "Elite - Previsão",
+      "tags": [
+        "Cartões",
+        "Fe"
+      ],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "909242e8-e7d6-4c97-8d60-8779a219b57a",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "receita",
+      "descricao": "Saldo Fe",
+      "secao": "Fe",
+      "valor": 9600.0,
+      "observacao": "Dinheiro Guardado",
+      "tags": [],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "59ca855f-321e-4a52-b240-fcb2347e5093",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "receita",
+      "descricao": "Saldo Fe",
+      "secao": "Fe",
+      "valor": 9600.0,
+      "observacao": "Previsão",
+      "tags": [],
+      "criado_em": "2026-05-23T10:45:26"
+    },
+    {
+      "id": "b9b4c01d-2579-463e-b8fc-cb3dd3e61fe1",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "Contadora - Informe Rendimentos",
+      "secao": "Outros",
+      "valor": 950.0,
+      "observacao": "",
+      "tags": [],
+      "criado_em": "2026-05-23T10:45:26",
+      "pago": false,
+      "historico": [
+        {
+          "ts": "2026-05-23T11:49:47",
+          "acao": "pago",
+          "antes": {
+            "pago": null
+          },
+          "depois": {
+            "pago": true
+          }
+        },
+        {
+          "ts": "2026-05-23T11:49:48",
+          "acao": "despago",
+          "antes": {
+            "pago": true
+          },
+          "depois": {
+            "pago": false
+          }
+        },
+        {
+          "ts": "2026-05-23T11:53:28",
+          "acao": "pago",
+          "antes": {
+            "pago": false
+          },
+          "depois": {
+            "pago": true
+          }
+        },
+        {
+          "ts": "2026-05-23T11:53:32",
+          "acao": "despago",
+          "antes": {
+            "pago": true
+          },
+          "depois": {
+            "pago": false
+          }
+        },
+        {
+          "ts": "2026-05-23T11:53:32",
+          "acao": "pago",
+          "antes": {
+            "pago": false
+          },
+          "depois": {
+            "pago": true
+          }
+        },
+        {
+          "ts": "2026-05-23T11:53:55",
+          "acao": "despago",
+          "antes": {
+            "pago": true
+          },
+          "depois": {
+            "pago": false
+          }
+        },
+        {
+          "ts": "2026-05-23T11:54:02",
+          "acao": "pago",
+          "antes": {
+            "pago": false
+          },
+          "depois": {
+            "pago": true
+          }
+        },
+        {
+          "ts": "2026-05-23T12:08:31",
+          "acao": "despago",
+          "antes": {
+            "pago": true
+          },
+          "depois": {
+            "pago": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "0b5bf09c-0562-47c8-a1d6-908621fae07d",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Gui",
+      "valor": 10700.0,
+      "observacao": "Provisao",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "7b060598-574b-457f-bbc0-2693ed62dc28",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Fe",
+      "valor": 9700.0,
+      "observacao": "Provisao",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "7f10df4e-4d38-425e-9260-26b5ff903fb8",
+      "ano": 2026,
+      "mes": 7,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Gui",
+      "valor": 10700.0,
+      "observacao": "Provisao",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "3491c3f9-613e-4c20-a00c-4c32daa35bbc",
+      "ano": 2026,
+      "mes": 7,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Fe",
+      "valor": 9700.0,
+      "observacao": "Provisao",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "5d2e8104-7b50-4d45-9342-f8977ba5c212",
+      "ano": 2026,
+      "mes": 8,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Gui",
+      "valor": 10700.0,
+      "observacao": "Provisao",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "d65e8c7c-934b-4ab8-b6d5-08c09154d011",
+      "ano": 2026,
+      "mes": 8,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Fe",
+      "valor": 9700.0,
+      "observacao": "Provisao",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "c52aa14b-cafe-4b9a-b94f-dfc3861550b7",
+      "ano": 2026,
+      "mes": 9,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Gui",
+      "valor": 10700.0,
+      "observacao": "Provisao",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "4467b7c0-71ef-4a19-8848-35f82f52169d",
+      "ano": 2026,
+      "mes": 9,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Fe",
+      "valor": 9700.0,
+      "observacao": "Provisao",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "5296c304-d615-4187-beae-74ff2cf0ec34",
+      "ano": 2026,
+      "mes": 10,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Gui",
+      "valor": 10700.0,
+      "observacao": "Provisao",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "9c6c15b7-8a4b-4510-9d84-aa5d100a9b7f",
+      "ano": 2026,
+      "mes": 10,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Fe",
+      "valor": 9700.0,
+      "observacao": "Provisao",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "1ea056ea-b448-4f83-91eb-7b4a668347f2",
+      "ano": 2026,
+      "mes": 11,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Gui",
+      "valor": 10700.0,
+      "observacao": "Provisao",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "819d3c73-ced3-4358-b35a-6a5a11076f78",
+      "ano": 2026,
+      "mes": 11,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Fe",
+      "valor": 9700.0,
+      "observacao": "Provisao",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "dede3258-689f-43b7-a519-311c83eb980e",
+      "ano": 2026,
+      "mes": 12,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Gui",
+      "valor": 10700.0,
+      "observacao": "Provisao",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "70ba2f7c-16c9-49b9-a878-bc26876ae56b",
+      "ano": 2026,
+      "mes": 12,
+      "tipo": "receita",
+      "descricao": "Salário",
+      "secao": "Fe",
+      "valor": 9700.0,
+      "observacao": "Provisao",
+      "tags": [
+        "salario",
+        "mensal"
+      ],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "dca3d5f5-ded3-4914-99a3-1a7652755933",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "Seguro do Carro",
+      "secao": "Outros",
+      "valor": 565.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35",
+      "pago": false,
+      "historico": [
+        {
+          "ts": "2026-05-23T11:58:54",
+          "acao": "pago",
+          "antes": {
+            "pago": null
+          },
+          "depois": {
+            "pago": true
+          }
+        },
+        {
+          "ts": "2026-05-23T11:58:56",
+          "acao": "despago",
+          "antes": {
+            "pago": true
+          },
+          "depois": {
+            "pago": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "31c7acf0-01b4-4423-9044-14684d0918d0",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "Psicologa",
+      "secao": "Fe",
+      "valor": 480.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "e97e4e19-9960-47e3-b0a1-5afea185e67e",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "Internet",
+      "secao": "Casa",
+      "valor": 150.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "8abc7f8b-3aa8-434c-941f-f50272b8e0a1",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "Celular Gui e Fe",
+      "secao": "Casa",
+      "valor": 190.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "86f90527-5982-4d84-95eb-68840ac64b4b",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "Condomino",
+      "secao": "Casa",
+      "valor": 700.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "5e88aff7-f877-4d06-8211-619b7e05fa01",
+      "ano": 2026,
+      "mes": 5,
+      "tipo": "despesa",
+      "descricao": "Agua/Luz",
+      "secao": "Casa",
+      "valor": 500.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "33f403da-2768-4ee0-8386-8b72be4f523e",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "despesa",
+      "descricao": "Seguro do Carro",
+      "secao": "Outros",
+      "valor": 565.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "a58dcf0a-7a67-4073-b95e-172320f9d609",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "despesa",
+      "descricao": "Psicologa",
+      "secao": "Fe",
+      "valor": 480.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "90d6b3f7-f9a4-40c6-b1f7-70e03b34a9a6",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "despesa",
+      "descricao": "Internet",
+      "secao": "Casa",
+      "valor": 150.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "6ef30131-63cd-4ca7-a8ae-8f632a7411d4",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "despesa",
+      "descricao": "Celular Gui e Fe",
+      "secao": "Casa",
+      "valor": 190.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "bfcae81f-98ed-48a0-a4e3-4bcde74d871e",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "despesa",
+      "descricao": "Condomino",
+      "secao": "Casa",
+      "valor": 700.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "8432e6f3-8dd7-45f9-8643-7cb2d9babdb8",
+      "ano": 2026,
+      "mes": 6,
+      "tipo": "despesa",
+      "descricao": "Agua/Luz",
+      "secao": "Casa",
+      "valor": 500.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "3930c687-5489-4cb0-8d9b-5d2f0513702d",
+      "ano": 2026,
+      "mes": 7,
+      "tipo": "despesa",
+      "descricao": "Seguro do Carro",
+      "secao": "Outros",
+      "valor": 565.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "4dc51ae3-33c3-4e40-932d-c21fd119f2fb",
+      "ano": 2026,
+      "mes": 7,
+      "tipo": "despesa",
+      "descricao": "Psicologa",
+      "secao": "Fe",
+      "valor": 480.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "1cf7f883-5839-4c66-a5c2-a4c947862579",
+      "ano": 2026,
+      "mes": 7,
+      "tipo": "despesa",
+      "descricao": "Internet",
+      "secao": "Casa",
+      "valor": 150.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "16776cdd-a09d-4c32-b3ab-6ffc87574597",
+      "ano": 2026,
+      "mes": 7,
+      "tipo": "despesa",
+      "descricao": "Celular Gui e Fe",
+      "secao": "Casa",
+      "valor": 190.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "e7b2aaa3-5aa0-4059-9946-29043ece6eeb",
+      "ano": 2026,
+      "mes": 7,
+      "tipo": "despesa",
+      "descricao": "Condomino",
+      "secao": "Casa",
+      "valor": 700.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "c195249f-f5a6-4543-b655-907c5360bbef",
+      "ano": 2026,
+      "mes": 7,
+      "tipo": "despesa",
+      "descricao": "Agua/Luz",
+      "secao": "Casa",
+      "valor": 500.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "79ec0041-cbdf-4924-ad18-13b8e86546a6",
+      "ano": 2026,
+      "mes": 8,
+      "tipo": "despesa",
+      "descricao": "Seguro do Carro",
+      "secao": "Outros",
+      "valor": 565.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "67615818-f2f8-4859-acd0-bc6d414652a8",
+      "ano": 2026,
+      "mes": 8,
+      "tipo": "despesa",
+      "descricao": "Psicologa",
+      "secao": "Fe",
+      "valor": 480.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "81087072-8d92-445b-964b-0d5de009d322",
+      "ano": 2026,
+      "mes": 8,
+      "tipo": "despesa",
+      "descricao": "Internet",
+      "secao": "Casa",
+      "valor": 150.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "42b0fb87-0ecf-4eac-943a-e37d531514ef",
+      "ano": 2026,
+      "mes": 8,
+      "tipo": "despesa",
+      "descricao": "Celular Gui e Fe",
+      "secao": "Casa",
+      "valor": 190.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "e4d97cb3-5e47-4396-a3cd-4a91dddd3e3c",
+      "ano": 2026,
+      "mes": 8,
+      "tipo": "despesa",
+      "descricao": "Condomino",
+      "secao": "Casa",
+      "valor": 700.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "a56893af-ad64-48e1-8988-b769580e6101",
+      "ano": 2026,
+      "mes": 8,
+      "tipo": "despesa",
+      "descricao": "Agua/Luz",
+      "secao": "Casa",
+      "valor": 500.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "d65291bd-b279-41cf-9bbb-ce8441e9a316",
+      "ano": 2026,
+      "mes": 9,
+      "tipo": "despesa",
+      "descricao": "Seguro do Carro",
+      "secao": "Outros",
+      "valor": 565.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "da3d666d-dfec-4718-8feb-f14504d59ffe",
+      "ano": 2026,
+      "mes": 9,
+      "tipo": "despesa",
+      "descricao": "Psicologa",
+      "secao": "Fe",
+      "valor": 480.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "6eae0bda-3640-472a-b627-1ef85ad21742",
+      "ano": 2026,
+      "mes": 9,
+      "tipo": "despesa",
+      "descricao": "Internet",
+      "secao": "Casa",
+      "valor": 150.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "d6dea992-5c47-422b-b399-085950fb6963",
+      "ano": 2026,
+      "mes": 9,
+      "tipo": "despesa",
+      "descricao": "Celular Gui e Fe",
+      "secao": "Casa",
+      "valor": 190.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "bc340c18-4f9f-46a7-9bff-28c206f5590d",
+      "ano": 2026,
+      "mes": 9,
+      "tipo": "despesa",
+      "descricao": "Condomino",
+      "secao": "Casa",
+      "valor": 700.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "c58c5134-adc2-4cca-b592-ab16e84611ac",
+      "ano": 2026,
+      "mes": 9,
+      "tipo": "despesa",
+      "descricao": "Agua/Luz",
+      "secao": "Casa",
+      "valor": 500.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "d71b6de9-bf9c-4090-a9ad-fbceaf4ec849",
+      "ano": 2026,
+      "mes": 10,
+      "tipo": "despesa",
+      "descricao": "Seguro do Carro",
+      "secao": "Outros",
+      "valor": 565.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "0befc5f8-0967-4e49-80a2-715f8d873d66",
+      "ano": 2026,
+      "mes": 10,
+      "tipo": "despesa",
+      "descricao": "Psicologa",
+      "secao": "Fe",
+      "valor": 480.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "9cbb5ab3-b945-4fe9-85ba-606070867b43",
+      "ano": 2026,
+      "mes": 10,
+      "tipo": "despesa",
+      "descricao": "Internet",
+      "secao": "Casa",
+      "valor": 150.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "d8b27186-5890-4039-8831-919cb56b2faf",
+      "ano": 2026,
+      "mes": 10,
+      "tipo": "despesa",
+      "descricao": "Celular Gui e Fe",
+      "secao": "Casa",
+      "valor": 190.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "cdec67f1-d878-434e-b901-eb909caa41e5",
+      "ano": 2026,
+      "mes": 10,
+      "tipo": "despesa",
+      "descricao": "Condomino",
+      "secao": "Casa",
+      "valor": 700.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "146170b4-5885-488c-a5ba-559b83eea4dd",
+      "ano": 2026,
+      "mes": 10,
+      "tipo": "despesa",
+      "descricao": "Agua/Luz",
+      "secao": "Casa",
+      "valor": 500.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "fa1dbb41-2484-4c74-8ab9-507d654000df",
+      "ano": 2026,
+      "mes": 11,
+      "tipo": "despesa",
+      "descricao": "Seguro do Carro",
+      "secao": "Outros",
+      "valor": 565.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "09feb4c3-4b9e-4346-9989-544ac5bef280",
+      "ano": 2026,
+      "mes": 11,
+      "tipo": "despesa",
+      "descricao": "Psicologa",
+      "secao": "Fe",
+      "valor": 480.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "c979f40f-b035-4ad8-a55b-c1266e439fb2",
+      "ano": 2026,
+      "mes": 11,
+      "tipo": "despesa",
+      "descricao": "Internet",
+      "secao": "Casa",
+      "valor": 150.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "676a502d-c4e3-41c8-b50f-f3583039e546",
+      "ano": 2026,
+      "mes": 11,
+      "tipo": "despesa",
+      "descricao": "Celular Gui e Fe",
+      "secao": "Casa",
+      "valor": 190.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "81f7ce55-bfa2-45fa-a236-76a84243b1fc",
+      "ano": 2026,
+      "mes": 11,
+      "tipo": "despesa",
+      "descricao": "Condomino",
+      "secao": "Casa",
+      "valor": 700.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "6fa8606a-b1f4-4cfc-b43b-507155564c12",
+      "ano": 2026,
+      "mes": 11,
+      "tipo": "despesa",
+      "descricao": "Agua/Luz",
+      "secao": "Casa",
+      "valor": 500.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "b2b01e0a-6208-411d-ab9a-8117393cd98b",
+      "ano": 2026,
+      "mes": 12,
+      "tipo": "despesa",
+      "descricao": "Seguro do Carro",
+      "secao": "Outros",
+      "valor": 565.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "a60a1369-6aed-4869-8840-2d35c1d6f270",
+      "ano": 2026,
+      "mes": 12,
+      "tipo": "despesa",
+      "descricao": "Psicologa",
+      "secao": "Fe",
+      "valor": 480.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "9635c7b7-f906-4dfb-8287-3fb3b25c8cd2",
+      "ano": 2026,
+      "mes": 12,
+      "tipo": "despesa",
+      "descricao": "Internet",
+      "secao": "Casa",
+      "valor": 150.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "d1ed9c61-1368-474a-ad12-48aa02762094",
+      "ano": 2026,
+      "mes": 12,
+      "tipo": "despesa",
+      "descricao": "Celular Gui e Fe",
+      "secao": "Casa",
+      "valor": 190.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "cbb0036f-4e07-418d-b307-563beaea05a2",
+      "ano": 2026,
+      "mes": 12,
+      "tipo": "despesa",
+      "descricao": "Condomino",
+      "secao": "Casa",
+      "valor": 700.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    },
+    {
+      "id": "9c25f191-2ea1-44e0-95ea-8f3fb439494e",
+      "ano": 2026,
+      "mes": 12,
+      "tipo": "despesa",
+      "descricao": "Agua/Luz",
+      "secao": "Casa",
+      "valor": 500.0,
+      "observacao": "Lançamento Recorrente",
+      "tags": [],
+      "criado_em": "2026-05-23T11:48:35"
+    }
+  ],
+  "secoes_receita": [
+    "Receitas",
+    "Salários",
+    "Outras receitas",
+    "teste receita",
+    "Gui",
+    "Fe"
+  ],
+  "anos": [
+    2026,
+    2025
+  ],
+  "lixeira": [
+    {
+      "id": "8992b146-5ed7-4cd1-bab8-7a7fa0db719c",
+      "ano": 2026,
+      "mes": 4,
+      "tipo": "receita",
+      "categoria": "XP GUI",
+      "secao": "Receitas",
+      "valor": 47962.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "categoria_id": "ac84a197-10b3-42e0-94bc-2eaa8767005f",
+      "descricao": "XP GUI",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:17",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "XP GUI",
+            "valor": 47962.0,
+            "secao": "Receitas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "receita",
+            "mes": 4,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:17"
+    },
+    {
+      "id": "c928d94f-634a-42db-990d-f9a1a74fdde5",
+      "ano": 2026,
+      "mes": 4,
+      "tipo": "despesa",
+      "categoria": "Condominio casa nova",
+      "secao": "Despesas fixas",
+      "valor": 650.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Condominio casa nova",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:17",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Condominio casa nova",
+            "valor": 650.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 4,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:17"
+    },
+    {
+      "id": "b7d44f1a-1d0f-4017-a1a2-f156c498dad5",
+      "ano": 2026,
+      "mes": 4,
+      "tipo": "despesa",
+      "categoria": "Celular Gui/Feh",
+      "secao": "Despesas fixas",
+      "valor": 190.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Celular Gui/Feh",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:17",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Celular Gui/Feh",
+            "valor": 190.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 4,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:17"
+    },
+    {
+      "id": "9aaaf469-b2f8-43e2-b56f-fc3e718ea7de",
+      "ano": 2026,
+      "mes": 4,
+      "tipo": "despesa",
+      "categoria": "Agua/Luz",
+      "secao": "Despesas fixas",
+      "valor": 350.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Agua/Luz",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:17",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Agua/Luz",
+            "valor": 350.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 4,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:17"
+    },
+    {
+      "id": "03a3c529-7397-4dee-8eb7-c6f8bdf03aa8",
+      "ano": 2026,
+      "mes": 4,
+      "tipo": "despesa",
+      "categoria": "Internet",
+      "secao": "Despesas fixas",
+      "valor": 150.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Internet",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:17",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Internet",
+            "valor": 150.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 4,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:17"
+    },
+    {
+      "id": "05596a6a-c7a3-461d-bea4-515ea6b1600b",
+      "ano": 2026,
+      "mes": 4,
+      "tipo": "despesa",
+      "categoria": "psicologa",
+      "secao": "Despesas fixas",
+      "valor": 240.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "psicologa",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:17",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "psicologa",
+            "valor": 240.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 4,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:17"
+    },
+    {
+      "id": "5e423720-353f-47c9-a273-d223d5e7994c",
+      "ano": 2026,
+      "mes": 4,
+      "tipo": "despesa",
+      "categoria": "Seguro Carro",
+      "secao": "Despesas fixas",
+      "valor": 565.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Seguro Carro",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:17",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Seguro Carro",
+            "valor": 565.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 4,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:17"
+    },
+    {
+      "id": "16432fd9-d3bd-4216-97c0-110147a4e03a",
+      "ano": 2026,
+      "mes": 4,
+      "tipo": "despesa",
+      "categoria": "Pilates",
+      "secao": "Despesas fixas",
+      "valor": 200.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Pilates",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:17",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Pilates",
+            "valor": 200.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 4,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:17"
+    },
+    {
+      "id": "e8ad0d35-d999-47b6-b0d6-6eb86c4783f2",
+      "ano": 2026,
+      "mes": 4,
+      "tipo": "despesa",
+      "categoria": "ITAU",
+      "secao": "Despesas fixas",
+      "valor": 2620.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "ITAU",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:17",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "ITAU",
+            "valor": 2620.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 4,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:17"
+    },
+    {
+      "id": "c529bc58-b755-4f43-8ed2-aa0ba25de3e0",
+      "ano": 2026,
+      "mes": 4,
+      "tipo": "despesa",
+      "categoria": "NU FE",
+      "secao": "Despesas fixas",
+      "valor": 2020.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "NU FE",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:17",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "NU FE",
+            "valor": 2020.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 4,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:17"
+    },
+    {
+      "id": "925642e9-a582-4ce5-9ce7-5b7e4dca2c5b",
+      "ano": 2026,
+      "mes": 4,
+      "tipo": "despesa",
+      "categoria": "Santander 1",
+      "secao": "Despesas fixas",
+      "valor": 3685.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Santander 1",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:17",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Santander 1",
+            "valor": 3685.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 4,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:17"
+    },
+    {
+      "id": "1ef435f5-5d33-4748-9165-337a23f4b46d",
+      "ano": 2026,
+      "mes": 4,
+      "tipo": "despesa",
+      "categoria": "Santander 2",
+      "secao": "Despesas fixas",
+      "valor": 565.55,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Santander 2",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:17",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Santander 2",
+            "valor": 565.55,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 4,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:17"
+    },
+    {
+      "id": "db8ea93e-3e27-4d91-91d3-356410004333",
+      "ano": 2026,
+      "mes": 4,
+      "tipo": "despesa",
+      "categoria": "Nubank Gui",
+      "secao": "Despesas fixas",
+      "valor": 7784.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Nubank Gui",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:17",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Nubank Gui",
+            "valor": 7784.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 4,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:17"
+    },
+    {
+      "id": "198486f1-92f0-4eb1-8bbd-9ac86400f561",
+      "ano": 2026,
+      "mes": 4,
+      "tipo": "despesa",
+      "categoria": "XP GUI",
+      "secao": "Despesas fixas",
+      "valor": 2500.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "XP GUI",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:17",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "XP GUI",
+            "valor": 2500.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 4,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:17"
+    },
+    {
+      "id": "391d257c-62b2-462d-9849-78d7100847bf",
+      "ano": 2026,
+      "mes": 4,
+      "tipo": "despesa",
+      "categoria": "ITAU",
+      "secao": "Despesas fixas",
+      "valor": 1252.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "ITAU",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:17",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "ITAU",
+            "valor": 1252.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 4,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:17"
+    },
+    {
+      "id": "0940c0b2-3143-4857-aaa4-b98422079f15",
+      "ano": 2026,
+      "mes": 4,
+      "tipo": "despesa",
+      "categoria": "PORTOBANK",
+      "secao": "Despesas fixas",
+      "valor": 4622.19,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "PORTOBANK",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:17",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "PORTOBANK",
+            "valor": 4622.19,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 4,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:17"
+    },
+    {
+      "id": "b9807225-e28d-46d8-88f4-84b4705ad7b4",
+      "ano": 2026,
+      "mes": 4,
+      "tipo": "despesa",
+      "categoria": "FINANCIAMENTO CARRO",
+      "secao": "Outros",
+      "valor": 2500.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "FINANCIAMENTO CARRO",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:17",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "FINANCIAMENTO CARRO",
+            "valor": 2500.0,
+            "secao": "Outros",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 4,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:17"
+    },
+    {
+      "id": "a4d384ae-1223-4b50-95b7-61f8cc81fb39",
+      "ano": 2026,
+      "mes": 3,
+      "tipo": "receita",
+      "categoria": "SALARIO GUI",
+      "secao": "Receitas",
+      "valor": 8000.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "SALARIO GUI",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:20",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "SALARIO GUI",
+            "valor": 8000.0,
+            "secao": "Receitas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "receita",
+            "mes": 3,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:20"
+    },
+    {
+      "id": "03dfca96-ece6-4769-a4b8-b62805a2b83c",
+      "ano": 2026,
+      "mes": 3,
+      "tipo": "receita",
+      "categoria": "SALARIO FEH",
+      "secao": "Receitas",
+      "valor": 7000.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "SALARIO FEH",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:20",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "SALARIO FEH",
+            "valor": 7000.0,
+            "secao": "Receitas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "receita",
+            "mes": 3,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:20"
+    },
+    {
+      "id": "ceaa8734-7bfa-440e-9ecf-2cf868c801bc",
+      "ano": 2026,
+      "mes": 3,
+      "tipo": "despesa",
+      "categoria": "Condominio casa nova",
+      "secao": "Despesas fixas",
+      "valor": 650.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Condominio casa nova",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:20",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Condominio casa nova",
+            "valor": 650.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 3,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:20"
+    },
+    {
+      "id": "2240a5d5-c2f7-488d-aa8c-cb42c64b5cad",
+      "ano": 2026,
+      "mes": 3,
+      "tipo": "despesa",
+      "categoria": "Celular Gui/Feh",
+      "secao": "Despesas fixas",
+      "valor": 190.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Celular Gui/Feh",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:20",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Celular Gui/Feh",
+            "valor": 190.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 3,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:20"
+    },
+    {
+      "id": "fb716743-a257-41aa-b074-b1ecdb18e68a",
+      "ano": 2026,
+      "mes": 3,
+      "tipo": "despesa",
+      "categoria": "Agua/Luz",
+      "secao": "Despesas fixas",
+      "valor": 350.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Agua/Luz",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:20",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Agua/Luz",
+            "valor": 350.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 3,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:20"
+    },
+    {
+      "id": "101e9eed-3e7e-4449-a558-65fad1262ac4",
+      "ano": 2026,
+      "mes": 3,
+      "tipo": "despesa",
+      "categoria": "Internet",
+      "secao": "Despesas fixas",
+      "valor": 150.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Internet",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:20",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Internet",
+            "valor": 150.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 3,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:20"
+    },
+    {
+      "id": "31d0c175-c0a0-4a10-95f7-b791c429550a",
+      "ano": 2026,
+      "mes": 3,
+      "tipo": "despesa",
+      "categoria": "Financiamento casa",
+      "secao": "Despesas fixas",
+      "valor": 3300.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Financiamento casa",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:20",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Financiamento casa",
+            "valor": 3300.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 3,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:20"
+    },
+    {
+      "id": "586bb7d6-12db-4b1a-9900-433a7f333157",
+      "ano": 2026,
+      "mes": 3,
+      "tipo": "despesa",
+      "categoria": "psicologa",
+      "secao": "Despesas fixas",
+      "valor": 480.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "psicologa",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:20",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "psicologa",
+            "valor": 480.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 3,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:20"
+    },
+    {
+      "id": "70348db9-cdbe-40fb-afe9-af3ca4b6c8bd",
+      "ano": 2026,
+      "mes": 3,
+      "tipo": "despesa",
+      "categoria": "Seguro Carro",
+      "secao": "Despesas fixas",
+      "valor": 565.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Seguro Carro",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:20",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Seguro Carro",
+            "valor": 565.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 3,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:20"
+    },
+    {
+      "id": "73082348-e1c0-4e99-ac08-e18e9221fdbd",
+      "ano": 2026,
+      "mes": 3,
+      "tipo": "despesa",
+      "categoria": "LUCIA",
+      "secao": "Despesas fixas",
+      "valor": 480.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "LUCIA",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:20",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "LUCIA",
+            "valor": 480.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 3,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:20"
+    },
+    {
+      "id": "9418fc7b-7636-45be-8761-c5da2ca32504",
+      "ano": 2026,
+      "mes": 3,
+      "tipo": "despesa",
+      "categoria": "Pilates",
+      "secao": "Despesas fixas",
+      "valor": 200.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Pilates",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:20",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Pilates",
+            "valor": 200.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 3,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:20"
+    },
+    {
+      "id": "99fcc6a5-085a-4b24-a7c0-98db932457d2",
+      "ano": 2026,
+      "mes": 3,
+      "tipo": "despesa",
+      "categoria": "NU FE",
+      "secao": "Despesas fixas",
+      "valor": 1216.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "NU FE",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:20",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "NU FE",
+            "valor": 1216.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 3,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:20"
+    },
+    {
+      "id": "ef041354-9ae3-4764-8813-959f47b880da",
+      "ano": 2026,
+      "mes": 3,
+      "tipo": "despesa",
+      "categoria": "INGRESSOS LIPE",
+      "secao": "Despesas fixas",
+      "valor": 942.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "INGRESSOS LIPE",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:20",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "INGRESSOS LIPE",
+            "valor": 942.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 3,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:20"
+    },
+    {
+      "id": "f17f05e0-06d6-4e2b-90bf-a7c4ebc8ef9d",
+      "ano": 2026,
+      "mes": 3,
+      "tipo": "despesa",
+      "categoria": "PORTOBANK",
+      "secao": "Despesas fixas",
+      "valor": 550.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "PORTOBANK",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:20",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "PORTOBANK",
+            "valor": 550.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 3,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:20"
+    },
+    {
+      "id": "999bfbe2-c60f-4ce2-91b9-982a5a1d5543",
+      "ano": 2026,
+      "mes": 3,
+      "tipo": "despesa",
+      "categoria": "SANTANDER 6246",
+      "secao": "Despesas fixas",
+      "valor": 1229.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "SANTANDER 6246",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:20",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "SANTANDER 6246",
+            "valor": 1229.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 3,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:20"
+    },
+    {
+      "id": "64a9e12d-d21c-42ec-8601-c8fe23a9b553",
+      "ano": 2026,
+      "mes": 3,
+      "tipo": "despesa",
+      "categoria": "sANTANDER",
+      "secao": "Outros",
+      "valor": 2800.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "sANTANDER",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:20",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "sANTANDER",
+            "valor": 2800.0,
+            "secao": "Outros",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 3,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:20"
+    },
+    {
+      "id": "297c47f2-e88e-4593-8352-c35f5a507f15",
+      "ano": 2026,
+      "mes": 3,
+      "tipo": "despesa",
+      "categoria": "FINANCIAMENTO CARRO",
+      "secao": "Outros",
+      "valor": 2500.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "FINANCIAMENTO CARRO",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:20",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "FINANCIAMENTO CARRO",
+            "valor": 2500.0,
+            "secao": "Outros",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 3,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:20"
+    },
+    {
+      "id": "31e9e5d6-ef83-425e-990c-1ec0505f3945",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "receita",
+      "categoria": "SALARIO GUI",
+      "secao": "Receitas",
+      "valor": 8000.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "SALARIO GUI",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "SALARIO GUI",
+            "valor": 8000.0,
+            "secao": "Receitas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "receita",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "4d4658da-f245-4398-953f-1a8cc43ce420",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "receita",
+      "categoria": "SALARIO FEH",
+      "secao": "Receitas",
+      "valor": 7000.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "SALARIO FEH",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "SALARIO FEH",
+            "valor": 7000.0,
+            "secao": "Receitas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "receita",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "ac7de9e6-0f7e-437e-8757-69679e4d1b7a",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "Condominio casa nova",
+      "secao": "Despesas fixas",
+      "valor": 650.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Condominio casa nova",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Condominio casa nova",
+            "valor": 650.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "212b3c85-fa5d-4f25-aa6d-cd3ca5d4bb54",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "Celular Gui/Feh",
+      "secao": "Despesas fixas",
+      "valor": 190.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Celular Gui/Feh",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Celular Gui/Feh",
+            "valor": 190.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "e3830ecc-6c13-47e9-987c-f5e482d6491a",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "Agua/Luz",
+      "secao": "Despesas fixas",
+      "valor": 350.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Agua/Luz",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Agua/Luz",
+            "valor": 350.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "39eda8d0-a3fd-45b5-a569-e8a846eb27f5",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "Internet",
+      "secao": "Despesas fixas",
+      "valor": 150.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Internet",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Internet",
+            "valor": 150.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "71a71d38-388d-4089-84e4-5749a697998f",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "Financiamento casa",
+      "secao": "Despesas fixas",
+      "valor": 3300.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Financiamento casa",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Financiamento casa",
+            "valor": 3300.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "5247adfa-0e4a-494b-8343-8263a4015381",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "psicologa",
+      "secao": "Despesas fixas",
+      "valor": 480.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "psicologa",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "psicologa",
+            "valor": 480.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "a146701a-63d2-4993-a8cf-8dc3ddc58457",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "Seguro Carro",
+      "secao": "Despesas fixas",
+      "valor": 565.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Seguro Carro",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Seguro Carro",
+            "valor": 565.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "7a1f67ed-f10c-4ae6-9cd0-198cde6cd1d6",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "LUCIA",
+      "secao": "Despesas fixas",
+      "valor": 480.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "LUCIA",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "LUCIA",
+            "valor": 480.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "ff04ddfe-2bd5-4d70-b3cd-f674630f7066",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "Pilates",
+      "secao": "Despesas fixas",
+      "valor": 200.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Pilates",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Pilates",
+            "valor": 200.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "9bcde8ec-83e4-47e4-b27c-6f841ade4f80",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "NU FE",
+      "secao": "Despesas fixas",
+      "valor": 400.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "NU FE",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "NU FE",
+            "valor": 400.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "8f18e9ec-f694-4c51-a81f-1957259bfa2d",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "Itaú click",
+      "secao": "Despesas fixas",
+      "valor": 3000.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Itaú click",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Itaú click",
+            "valor": 3000.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "d73e1c7c-1bc0-49ca-8b76-77d63ea8d09d",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "INGRESSOS LIPE",
+      "secao": "Despesas fixas",
+      "valor": 942.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "INGRESSOS LIPE",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "INGRESSOS LIPE",
+            "valor": 942.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "33d8203b-bcf6-44e1-9e58-976bc0d5142f",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "NU Gui",
+      "secao": "Despesas fixas",
+      "valor": 5525.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "NU Gui",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "NU Gui",
+            "valor": 5525.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "3a652d52-b6d3-4ef9-ba69-607b983ab8d2",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "Itau",
+      "secao": "Despesas fixas",
+      "valor": 2600.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Itau",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Itau",
+            "valor": 2600.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "2bdc0324-04b9-4d6b-b04e-5d778c3a93d6",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "PORTOBANK",
+      "secao": "Despesas fixas",
+      "valor": 3200.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "PORTOBANK",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "PORTOBANK",
+            "valor": 3200.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "ebc2dc61-1a8c-4afd-9f00-cbfa4293d167",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "SANTANDER 6246",
+      "secao": "Despesas fixas",
+      "valor": -1300.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "SANTANDER 6246",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "SANTANDER 6246",
+            "valor": -1300.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "2c9a5d08-dbbd-4361-a3ac-0077e93d1eb5",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "SANTANDER 2",
+      "secao": "Despesas fixas",
+      "valor": 20.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "SANTANDER 2",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "SANTANDER 2",
+            "valor": 20.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "8f875115-2b1b-41f0-a845-54e9208e29a9",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "Itau",
+      "secao": "Outros",
+      "valor": 17380.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Itau",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Itau",
+            "valor": 17380.0,
+            "secao": "Outros",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "5ab960aa-64c4-401f-9fff-541e4b07a5ae",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "Carro",
+      "secao": "Outros",
+      "valor": 40000.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Carro",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Carro",
+            "valor": 40000.0,
+            "secao": "Outros",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "05206510-5da5-417a-89fc-056487d84d37",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "Nubank",
+      "secao": "Outros",
+      "valor": 19000.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Nubank",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Nubank",
+            "valor": 19000.0,
+            "secao": "Outros",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "a4807db4-4adb-420d-b63b-93ac71d95d8c",
+      "ano": 2026,
+      "mes": 2,
+      "tipo": "despesa",
+      "categoria": "sANTANDER",
+      "secao": "Outros",
+      "valor": 2800.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "sANTANDER",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:22",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "sANTANDER",
+            "valor": 2800.0,
+            "secao": "Outros",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 2,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:22"
+    },
+    {
+      "id": "dddb18c4-088d-44b3-a7d9-31d56e686ae6",
+      "ano": 2026,
+      "mes": 1,
+      "tipo": "receita",
+      "categoria": "SALARIO GUI",
+      "secao": "Receitas",
+      "valor": 13500.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "SALARIO GUI",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:24",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "SALARIO GUI",
+            "valor": 13500.0,
+            "secao": "Receitas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "receita",
+            "mes": 1,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:24"
+    },
+    {
+      "id": "06ec7a75-3c1c-4bd4-a71d-21db0d41f6bf",
+      "ano": 2026,
+      "mes": 1,
+      "tipo": "receita",
+      "categoria": "SALARIO FEH",
+      "secao": "Receitas",
+      "valor": 1108.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "SALARIO FEH",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:24",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "SALARIO FEH",
+            "valor": 1108.0,
+            "secao": "Receitas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "receita",
+            "mes": 1,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:24"
+    },
+    {
+      "id": "2d86fdb0-cacf-4b39-b53e-b9501632b2de",
+      "ano": 2026,
+      "mes": 1,
+      "tipo": "despesa",
+      "categoria": "Condominio casa nova",
+      "secao": "Despesas fixas",
+      "valor": 650.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Condominio casa nova",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:24",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Condominio casa nova",
+            "valor": 650.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 1,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:24"
+    },
+    {
+      "id": "de17a5cc-0422-40ea-9394-60db4f316113",
+      "ano": 2026,
+      "mes": 1,
+      "tipo": "despesa",
+      "categoria": "Celular Gui/Feh",
+      "secao": "Despesas fixas",
+      "valor": 190.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Celular Gui/Feh",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:24",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Celular Gui/Feh",
+            "valor": 190.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 1,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:24"
+    },
+    {
+      "id": "d6dd0c9a-b7a5-4965-82f2-1e6636229094",
+      "ano": 2026,
+      "mes": 1,
+      "tipo": "despesa",
+      "categoria": "Agua/Luz",
+      "secao": "Despesas fixas",
+      "valor": 350.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Agua/Luz",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:24",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Agua/Luz",
+            "valor": 350.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 1,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:24"
+    },
+    {
+      "id": "226046e5-c5f2-496a-988e-01c3135b2bdc",
+      "ano": 2026,
+      "mes": 1,
+      "tipo": "despesa",
+      "categoria": "Internet",
+      "secao": "Despesas fixas",
+      "valor": 150.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Internet",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:24",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Internet",
+            "valor": 150.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 1,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:24"
+    },
+    {
+      "id": "1fb59de5-b713-42a7-9b7b-60cab7d555e2",
+      "ano": 2026,
+      "mes": 1,
+      "tipo": "despesa",
+      "categoria": "Financiamento casa",
+      "secao": "Despesas fixas",
+      "valor": 3500.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Financiamento casa",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:24",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Financiamento casa",
+            "valor": 3500.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 1,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:24"
+    },
+    {
+      "id": "d51e2352-1279-436d-985c-428df5c009d4",
+      "ano": 2026,
+      "mes": 1,
+      "tipo": "despesa",
+      "categoria": "psicologa",
+      "secao": "Despesas fixas",
+      "valor": 440.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "psicologa",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:24",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "psicologa",
+            "valor": 440.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 1,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:24"
+    },
+    {
+      "id": "af3b1d1e-7798-489f-a292-559d8e503a98",
+      "ano": 2026,
+      "mes": 1,
+      "tipo": "despesa",
+      "categoria": "Seguro Carro",
+      "secao": "Despesas fixas",
+      "valor": 565.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Seguro Carro",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:24",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Seguro Carro",
+            "valor": 565.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 1,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:24"
+    },
+    {
+      "id": "2b05c446-7f53-4247-980a-83f8ec7d9fed",
+      "ano": 2026,
+      "mes": 1,
+      "tipo": "despesa",
+      "categoria": "LUCIA",
+      "secao": "Despesas fixas",
+      "valor": 880.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "LUCIA",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:24",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "LUCIA",
+            "valor": 880.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 1,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:24"
+    },
+    {
+      "id": "e2975972-1ebc-415b-b1f6-5f1507957529",
+      "ano": 2026,
+      "mes": 1,
+      "tipo": "despesa",
+      "categoria": "NU FE",
+      "secao": "Despesas fixas",
+      "valor": 1220.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "NU FE",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:24",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "NU FE",
+            "valor": 1220.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 1,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:24"
+    },
+    {
+      "id": "cc06b562-215e-46ef-855b-752ac390bc51",
+      "ano": 2026,
+      "mes": 1,
+      "tipo": "despesa",
+      "categoria": "Itaú click",
+      "secao": "Despesas fixas",
+      "valor": 3000.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Itaú click",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:24",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Itaú click",
+            "valor": 3000.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 1,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:24"
+    },
+    {
+      "id": "4c32125a-0d0f-4391-a409-9e23a5815c34",
+      "ano": 2026,
+      "mes": 1,
+      "tipo": "despesa",
+      "categoria": "INGRESSOS LIPE]",
+      "secao": "Despesas fixas",
+      "valor": 942.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "INGRESSOS LIPE]",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:24",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "INGRESSOS LIPE]",
+            "valor": 942.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 1,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:24"
+    },
+    {
+      "id": "d33ef74f-02ff-47cc-9fb3-70605e643a53",
+      "ano": 2026,
+      "mes": 1,
+      "tipo": "despesa",
+      "categoria": "NU Gui",
+      "secao": "Despesas fixas",
+      "valor": 6500.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "NU Gui",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:24",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "NU Gui",
+            "valor": 6500.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 1,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:24"
+    },
+    {
+      "id": "2860b324-e9cb-4b8f-b658-6accc180f390",
+      "ano": 2026,
+      "mes": 1,
+      "tipo": "despesa",
+      "categoria": "Itau",
+      "secao": "Despesas fixas",
+      "valor": 2600.0,
+      "observacao": "",
+      "criado_em": "2026-05-22T19:53:44",
+      "descricao": "Itau",
+      "historico": [
+        {
+          "ts": "2026-05-23T11:48:24",
+          "acao": "excluido",
+          "antes": {
+            "descricao": "Itau",
+            "valor": 2600.0,
+            "secao": "Despesas fixas",
+            "observacao": "",
+            "tags": null,
+            "pago": null,
+            "tipo": "despesa",
+            "mes": 1,
+            "ano": 2026
+          }
+        }
+      ],
+      "excluido_em": "2026-05-23T11:48:24"
+    }
+  ],
+  "meses_revisados": []
+}

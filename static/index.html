@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos · Controle Pessoal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <span class="logo-accent">$</span>
+            <div>
+                <h1>Controle de Gastos</h1>
+                <p class="subtitle">Receitas, despesas e saldo mensal</p>
+            </div>
+        </div>
+        <div class="header-actions">
+            <label class="field-inline">
+                Ano
+                <div class="field-with-action ano-wrapper">
+                    <select id="anoSelect"></select>
+                    <button type="button" class="btn-icon-mini" id="btnNovoAno" title="Adicionar ano" aria-label="Adicionar ano">+</button>
+                    <button type="button" class="btn-icon-mini btn-icon-danger" id="btnExcluirAno" title="Excluir ano" aria-label="Excluir ano">&times;</button>
+                </div>
+            </label>
+            <button type="button" class="btn-theme-toggle" id="btnTheme" title="Alternar modo escuro" aria-label="Alternar tema"></button>
+            <div class="header-buttons">
+                <button type="button" class="btn btn-ghost" id="btnDownloadTemplate" title="Baixar modelo Excel">
+                    <span class="btn-icon-inline">⬇</span> Modelo
+                </button>
+                <button type="button" class="btn btn-ghost" id="btnImportExcel" title="Importar lançamentos de Excel">
+                    <span class="btn-icon-inline">⬆</span> Importar
+                </button>
+                <button type="button" class="btn btn-ghost" id="btnLixeira" title="Lixeira — lançamentos excluídos">
+                    🗑 Lixeira
+                </button>
+                <input type="file" id="fileExcel" accept=".xlsx,.xls" style="display:none">
+                <button type="button" class="btn btn-primary" id="btnNovo">+ Novo lançamento</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <nav class="month-tabs" id="monthTabs" aria-label="Meses"></nav>
+
+        <section class="summary-cards" id="summaryCards">
+            <article class="card card-entrada">
+                <span class="card-label">Entrada</span>
+                <strong class="card-value" id="totalEntrada">R$ 0,00</strong>
+            </article>
+            <article class="card card-saida">
+                <span class="card-label">Saída total</span>
+                <strong class="card-value" id="totalSaida">R$ 0,00</strong>
+            </article>
+            <article class="card card-caixa">
+                <span class="card-label">Caixa disponível</span>
+                <span class="card-hint">Receitas em caixa − investido − despesas pagas</span>
+                <strong class="card-value" id="totalCaixa">R$ 0,00</strong>
+            </article>
+            <article class="card card-pendente">
+                <span class="card-label">A pagar</span>
+                <strong class="card-value" id="totalPendente">R$ 0,00</strong>
+            </article>
+            <article class="card card-orcamento">
+                <span class="card-label">Orçamento</span>
+                <span class="card-hint">Entrada − saída total</span>
+                <strong class="card-value" id="totalOrcamento">R$ 0,00</strong>
+            </article>
+        </section>
+
+        <div class="mes-actions" style="display:flex;justify-content:flex-end;margin-bottom:0.5rem">
+            <button type="button" class="btn btn-ghost" id="btnLimparMes">🗑 Limpar mês</button>
+        </div>
+
+        <section class="panel chart-panel">
+            <div class="panel-header chart-header">
+                <div class="chart-title">
+                    <h2>Visão anual</h2>
+                    <span class="chart-subtitle" id="chartSubtitle"></span>
+                </div>
+                <div class="chart-highlights" id="chartHighlights"></div>
+            </div>
+            <div class="chart-wrap">
+                <canvas id="chartAnual"></canvas>
+            </div>
+        </section>
+
+        <div class="grid-main">
+            <section class="panel">
+                <div class="panel-header">
+                    <div class="panel-header-title">
+                        <h2>Receitas</h2>
+                        <span id="receitasInvestidoTotal" class="secao-invest-badge receitas-invest-total hidden" aria-live="polite"></span>
+                    </div>
+                    <button type="button" class="btn btn-ghost btn-sm" data-add="receita">Adicionar</button>
+                </div>
+                <div id="receitasContainer"></div>
+            </section>
+
+            <section class="panel">
+                <div class="panel-header">
+                    <div class="panel-header-title">
+                        <h2>Despesas</h2>
+                        <span id="despesasPagoTotal" class="secao-pago-badge despesas-pago-total hidden" aria-live="polite"></span>
+                    </div>
+                    <button type="button" class="btn btn-ghost btn-sm" data-add="despesa">Adicionar</button>
+                </div>
+                <div id="despesasContainer"></div>
+            </section>
+        </div>
+    </main>
+
+    <dialog id="modalLancamento" class="modal">
+        <form id="formLancamento" method="dialog">
+            <div class="modal-header">
+                <h3 id="modalTitle">Novo lançamento</h3>
+                <button type="button" class="btn-icon" id="btnFecharModal" aria-label="Fechar">&times;</button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="lancId">
+                <label>
+                    Tipo
+                    <select id="lancTipo" required>
+                        <option value="receita">Receita</option>
+                        <option value="despesa">Despesa</option>
+                    </select>
+                </label>
+                <label>
+                    Descrição
+                    <input type="text" id="lancDescricao" maxlength="120" required placeholder="Ex.: Salário, Condomínio">
+                </label>
+                <label id="secaoField">
+                    Seção
+                    <div class="field-with-action">
+                        <select id="lancSecao"></select>
+                        <button type="button" class="btn btn-ghost btn-sm" id="btnNovaSecao">+ Nova</button>
+                    </div>
+                    <div id="novaSecaoForm" class="nova-secao-form hidden">
+                        <input type="text" id="novaSecaoNome" maxlength="80" placeholder="Nome da nova seção">
+                        <div class="nova-secao-actions">
+                            <button type="button" class="btn btn-primary btn-sm" id="btnSalvarSecao">Criar</button>
+                            <button type="button" class="btn btn-secondary btn-sm" id="btnCancelarSecao">Cancelar</button>
+                        </div>
+                    </div>
+                </label>
+                <label>
+                    Valor (R$)
+                    <input type="number" id="lancValor" min="0.01" step="0.01" required>
+                </label>
+                <label>
+                    Observação
+                    <input type="text" id="lancObs" maxlength="200" placeholder="Opcional">
+                </label>
+                <label>
+                    Tags
+                    <div class="tag-input" id="tagInput">
+                        <div class="tag-chips" id="tagChips"></div>
+                        <input type="text" id="tagText" maxlength="40" placeholder="Digite e pressione Enter" list="tagSuggestions" autocomplete="off">
+                    </div>
+                    <datalist id="tagSuggestions"></datalist>
+                    <small class="field-hint">Separe com Enter ou vírgula. Crie novas tags ao digitar.</small>
+                </label>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="btnCancelar">Cancelar</button>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog id="modalExcluirAno" class="modal modal-sm">
+        <form id="formExcluirAno" method="dialog">
+            <div class="modal-header">
+                <h3>Excluir ano</h3>
+                <button type="button" class="btn-icon" id="btnFecharExcluirAno" aria-label="Fechar">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="confirm-text">
+                    Excluir o ano <strong id="excluirAnoLabel"></strong>?
+                </p>
+                <p class="confirm-warning" id="excluirAnoImpacto"></p>
+                <small class="field-hint">Esta ação não pode ser desfeita.</small>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="btnCancelarExcluirAno">Cancelar</button>
+                <button type="submit" class="btn btn-danger-solid">Excluir</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog id="modalAno" class="modal modal-sm">
+        <form id="formAno" method="dialog">
+            <div class="modal-header">
+                <h3>Novo ano</h3>
+                <button type="button" class="btn-icon" id="btnFecharAno" aria-label="Fechar">&times;</button>
+            </div>
+            <div class="modal-body">
+                <label>
+                    Ano
+                    <input type="number" id="novoAnoInput" min="1900" max="2200" step="1" required placeholder="Ex.: 2027">
+                </label>
+                <small class="field-hint">Cria o ano para planejamento, mesmo sem lançamentos.</small>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="btnCancelarAno">Cancelar</button>
+                <button type="submit" class="btn btn-primary">Criar</button>
+            </div>
+        </form>
+    </dialog>
+
+    <!-- Modal: Histórico de alterações -->
+    <dialog id="modalHistorico" class="modal">
+        <div class="modal-header">
+            <div>
+                <h3>Histórico de alterações</h3>
+                <p class="modal-subtitle" id="historicoSubtitle"></p>
+            </div>
+            <button type="button" class="btn-icon" id="btnFecharHistorico" aria-label="Fechar">&times;</button>
+        </div>
+        <div class="modal-body" id="historicoBody" style="min-height:120px"></div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" id="btnFecharHistoricoFooter">Fechar</button>
+        </div>
+    </dialog>
+
+    <!-- Modal: Lixeira -->
+    <dialog id="modalLixeira" class="modal modal-lg">
+        <div class="modal-header">
+            <div>
+                <h3>🗑 Lixeira</h3>
+                <p class="modal-subtitle">Lançamentos excluídos — restaure ou remova permanentemente</p>
+            </div>
+            <button type="button" class="btn-icon" id="btnFecharLixeira" aria-label="Fechar">&times;</button>
+        </div>
+        <div class="modal-body" id="lixeiraBody" style="min-height:120px;padding:0"></div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" id="btnEsvaziarLixeira">Esvaziar lixeira</button>
+            <button type="button" class="btn btn-secondary" id="btnFecharLixeiraFooter">Fechar</button>
+        </div>
+    </dialog>
+
+    <div id="toast" class="toast hidden" role="status"></div>
+</body>
+</html>
