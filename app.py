@@ -19,6 +19,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 DATA_FILE = os.path.join(DATA_DIR, "gastos.json")
 ASSINATURAS_FILE = os.path.join(DATA_DIR, "assinaturas.json")
+FEATURES_FILE = os.path.join(DATA_DIR, "features.json")
 
 LOCK_TIMEOUT = 5.0
 MAX_RETRIES = 15
@@ -1362,12 +1363,41 @@ def delete_assinatura(item_id):
     return jsonify({"ok": True})
 
 
+# ── Features implementadas (changelog) ────────────────────────────
+
+
+def default_features_data():
+    return {"features": []}
+
+
+def get_features_data():
+    data = safe_read_json(FEATURES_FILE)
+    if data is None:
+        data = default_features_data()
+        safe_write_json(FEATURES_FILE, data)
+    data.setdefault("features", [])
+    return data
+
+
+def _feature_sort_key(item):
+    return item.get("implementado_em") or ""
+
+
+@app.route("/api/features")
+def list_features():
+    data = get_features_data()
+    items = list(data.get("features", []))
+    items.sort(key=_feature_sort_key, reverse=True)
+    return jsonify({"features": items, "total": len(items)})
+
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", "5001"))
     print("=" * 60)
     print("  Controle de Gastos Pessoais")
     print(f"  Dados: {DATA_FILE}")
     print(f"  Assinaturas: {ASSINATURAS_FILE}")
+    print(f"  Features: {FEATURES_FILE}")
     print(f"  Servidor: http://localhost:{port}")
     print("=" * 60)
     app.run(host="0.0.0.0", port=port, debug=False)

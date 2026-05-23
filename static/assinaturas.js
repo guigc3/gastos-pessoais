@@ -1,5 +1,4 @@
 const assinaturasState = {
-    view: "gastos",
     cartoes: [],
     filtroCartao: "",
     lista: [],
@@ -51,36 +50,6 @@ function renderAssinaturaHistoricoEntry(entry) {
             </div>
             ${linhas ? `<div class="hist-campos">${linhas}</div>` : ""}
         </div>`;
-}
-
-function setAppView(view) {
-    assinaturasState.view = view;
-    const isGastos = view === "gastos";
-
-    document.querySelectorAll(".app-tab").forEach((btn) => {
-        btn.classList.toggle("active", btn.dataset.view === view);
-    });
-
-    document.getElementById("viewGastos")?.classList.toggle("hidden", !isGastos);
-    document.getElementById("viewAssinaturas")?.classList.toggle("hidden", isGastos);
-
-    document.querySelectorAll(".gastos-only").forEach((el) => {
-        el.classList.toggle("hidden", !isGastos);
-    });
-    document.querySelectorAll(".assinaturas-only").forEach((el) => {
-        el.classList.toggle("hidden", isGastos);
-    });
-
-    const subtitle = document.getElementById("headerSubtitle");
-    if (subtitle) {
-        subtitle.textContent = isGastos
-            ? "Receitas, despesas e saldo mensal"
-            : "Assinaturas e custos recorrentes no cartão";
-    }
-
-    if (!isGastos) {
-        loadAssinaturasView();
-    }
 }
 
 function renderCartoesDatalist() {
@@ -303,10 +272,6 @@ async function openAssinaturaHistorico(id) {
 }
 
 function bindAssinaturasEvents() {
-    document.querySelectorAll(".app-tab").forEach((btn) => {
-        btn.addEventListener("click", () => setAppView(btn.dataset.view));
-    });
-
     document.getElementById("btnNovaAssinatura")?.addEventListener("click", () => openAssinaturaModal());
     document.getElementById("formAssinatura")?.addEventListener("submit", saveAssinatura);
     document.getElementById("btnCancelarAssinatura")?.addEventListener("click", () => {

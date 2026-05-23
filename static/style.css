@@ -407,6 +407,184 @@ body {
     opacity: 0.72;
 }
 
+.view-features.container {
+    padding-top: 12px;
+}
+
+.features-panel .panel-header {
+    align-items: flex-start;
+}
+
+.feature-count-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 36px;
+    height: 36px;
+    padding: 0 10px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent-dark);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.features-timeline-section {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+.features-timeline-heading {
+    margin: 0 0 12px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+}
+
+.features-timeline-scroll {
+    overflow-x: auto;
+    padding-bottom: 4px;
+    margin: 0 -4px;
+}
+
+.features-timeline {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    min-width: min-content;
+    padding: 4px;
+}
+
+.timeline-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    border: 2px solid var(--border);
+    background: var(--surface);
+    border-radius: var(--radius-sm);
+    padding: 10px 14px;
+    min-width: 108px;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s, box-shadow 0.15s, transform 0.15s;
+    font: inherit;
+    color: inherit;
+}
+
+.timeline-node:hover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+}
+
+.timeline-node.active {
+    border-color: var(--accent);
+    background: var(--tab-active-bg);
+    color: var(--tab-active-color);
+    box-shadow: var(--tab-active-shadow);
+}
+
+.timeline-node.active .timeline-date,
+.timeline-node.active .timeline-count {
+    color: inherit;
+}
+
+.timeline-node-all.active {
+    background: var(--surface-2);
+    color: var(--text-primary);
+    border-color: var(--accent);
+    box-shadow: var(--shadow-xs);
+}
+
+.timeline-date {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+.timeline-count {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--surface-3);
+}
+
+.timeline-node.active .timeline-count {
+    background: rgba(255, 255, 255, 0.22);
+}
+
+.timeline-connector {
+    flex-shrink: 0;
+    width: 28px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--border), var(--accent-soft));
+    margin: 0 2px;
+}
+
+.features-filter-caption {
+    margin: 12px 0 0;
+    font-size: 0.84rem;
+    color: var(--text-secondary);
+}
+
+.features-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feature-item {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.feature-item:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-xs);
+}
+
+.feature-item-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.feature-title {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+}
+
+.feature-ts {
+    flex-shrink: 0;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.feature-desc {
+    margin: 8px 0 0;
+    font-size: 0.84rem;
+    line-height: 1.45;
+    color: var(--text-secondary);
+}
+
 /* ─ Month tabs ─ */
 .month-tabs {
     display: grid;
@@ -851,20 +1029,29 @@ tr:last-child td { border-bottom: none; }
    MODAL
    ═══════════════════════════════════════════════════════════ */
 .modal {
+    position: fixed;
+    inset: 0;
+    margin: auto;
     border: none;
     border-radius: var(--radius-lg);
     padding: 0;
     width: min(460px, calc(100vw - 32px));
+    max-height: min(90vh, 100%);
+    height: fit-content;
     box-shadow: var(--shadow-lg);
     background: var(--surface);
     color: var(--text-primary);
-    animation: modalIn 0.22s cubic-bezier(0.34,1.56,0.64,1) both;
+    animation: modalIn 0.22s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    overflow: hidden;
+}
+.modal:not([open]) {
+    display: none;
 }
 .modal-sm { width: min(360px, calc(100vw - 32px)); }
 
 @keyframes modalIn {
-    from { opacity: 0; transform: scale(0.92) translateY(12px); }
-    to   { opacity: 1; transform: scale(1) translateY(0); }
+    from { opacity: 0; transform: scale(0.92); }
+    to   { opacity: 1; transform: scale(1); }
 }
 
 .modal::backdrop {
@@ -1074,8 +1261,20 @@ label input[type="number"]:focus {
 /* ═══════════════════════════════════════════════════════════
    MODAL LIXEIRA
    ═══════════════════════════════════════════════════════════ */
-.modal-lg { width: min(820px, 94vw); max-height: 82vh; }
+.modal-lg {
+    width: min(820px, calc(100vw - 32px));
+    max-height: min(88vh, 100%);
+}
 .modal-lg .modal-body { overflow-y: auto; }
+
+.modal-subtitle {
+    margin: 4px 0 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    text-transform: none;
+    letter-spacing: 0;
+}
 
 .badge-receita {
     background: rgba(16,185,129,0.12); color: #059669;

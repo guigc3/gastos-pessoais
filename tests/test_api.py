@@ -17,15 +17,18 @@ def gastos_client():
     data_file = os.path.join(data_dir, "gastos.json")
 
     assinaturas_file = os.path.join(data_dir, "assinaturas.json")
+    features_file = os.path.join(data_dir, "features.json")
 
     old = {
         "DATA_DIR": gastos_app.DATA_DIR,
         "DATA_FILE": gastos_app.DATA_FILE,
         "ASSINATURAS_FILE": gastos_app.ASSINATURAS_FILE,
+        "FEATURES_FILE": gastos_app.FEATURES_FILE,
     }
     gastos_app.DATA_DIR = data_dir
     gastos_app.DATA_FILE = data_file
     gastos_app.ASSINATURAS_FILE = assinaturas_file
+    gastos_app.FEATURES_FILE = features_file
 
     gastos_app.app.config["TESTING"] = True
     with gastos_app.app.test_client() as client:
@@ -314,3 +317,30 @@ class TestAssinaturas:
         ativas = gastos_client.get("/api/assinaturas?ativas=1").get_json()["assinaturas"]
         assert len(ativas) == 1
         assert ativas[0]["descricao"] == "Ativa"
+
+
+class TestFeatures:
+    def test_listar_features_ordenadas(self, gastos_client):
+        gastos_app.safe_write_json(
+            gastos_app.FEATURES_FILE,
+            {
+                "features": [
+                    {
+                        "id": "a",
+                        "titulo": "Antiga",
+                        "implementado_em": "2026-01-01T10:00:00",
+                    },
+                    {
+                        "id": "b",
+                        "titulo": "Nova",
+                        "implementado_em": "2026-06-01T18:00:00",
+                    },
+                ]
+            },
+        )
+        r = gastos_client.get("/api/features")
+        assert r.status_code == 200
+        body = r.get_json()
+        assert body["total"] == 2
+        assert body["features"][0]["titulo"] == "Nova"
+        assert body["features"][1]["titulo"] == "Antiga"

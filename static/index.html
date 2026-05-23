@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
     <script src="app.js" defer></script>
+    <script src="tabs.js" defer></script>
     <script src="assinaturas.js" defer></script>
+    <script src="features.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -50,6 +52,7 @@
     <nav class="app-tabs container" id="appTabs" aria-label="Seções do aplicativo">
         <button type="button" class="app-tab active" data-view="gastos">Gastos mensais</button>
         <button type="button" class="app-tab" data-view="assinaturas">Assinaturas</button>
+        <button type="button" class="app-tab" data-view="features">Features</button>
     </nav>
 
     <main class="container view-gastos" id="viewGastos">
@@ -155,6 +158,28 @@
             <div class="table-wrap" id="assinaturasTableWrap">
                 <div class="empty-state" style="padding:40px">Carregando…</div>
             </div>
+        </section>
+    </main>
+
+    <main class="container view-features hidden" id="viewFeatures">
+        <section class="panel features-panel">
+            <div class="panel-header">
+                <div class="panel-header-title">
+                    <h2>Features implementadas</h2>
+                    <span class="chart-subtitle">Registro das entregas com data e hora</span>
+                </div>
+                <span class="feature-count-badge" id="featuresTotal">0</span>
+            </div>
+            <div class="features-timeline-section">
+                <h3 class="features-timeline-heading">Linha do tempo</h3>
+                <div class="features-timeline-scroll">
+                    <div class="features-timeline" id="featuresTimeline" role="tablist" aria-label="Datas de implementação"></div>
+                </div>
+                <p class="features-filter-caption" id="featuresFilterCaption" aria-live="polite"></p>
+            </div>
+            <ol class="features-list" id="featuresList" aria-label="Lista de features">
+                <li class="empty-state" style="padding:40px">Carregando…</li>
+            </ol>
         </section>
     </main>
 

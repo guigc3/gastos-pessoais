@@ -1,0 +1,148 @@
+{
+  "features": [
+    {
+      "id": "f001-crud-mensal",
+      "titulo": "CRUD de receitas e despesas mensais",
+      "descricao": "Lançamentos por ano/mês com descrição, valor, seções, tags e observações.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f002-caixa-orcamento",
+      "titulo": "Caixa disponível e orçamento",
+      "descricao": "Cards de entrada, saída total, caixa, a pagar e orçamento do mês.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f003-pago-investido",
+      "titulo": "Despesas pagas e receitas investidas",
+      "descricao": "Checkboxes que afetam o caixa disponível e o visual das linhas.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f004-grafico-anual",
+      "titulo": "Gráfico de visão anual",
+      "descricao": "Chart.js com entrada, saída e saldo líquido por mês do ano selecionado.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f005-modo-escuro",
+      "titulo": "Modo escuro",
+      "descricao": "Alternância de tema com preferência em localStorage e suporte no gráfico.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f006-historico-lanc",
+      "titulo": "Histórico de alterações por lançamento",
+      "descricao": "Log de criado, editado, pago, investido, excluído e restaurado com modal.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f007-lixeira",
+      "titulo": "Lixeira de lançamentos",
+      "descricao": "Exclusão reversível com restauração, exclusão permanente e esvaziar lixeira.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f008-meses-revisados",
+      "titulo": "Meses revisados",
+      "descricao": "Marcação de meses conferidos na barra de abas mensais.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f009-excel",
+      "titulo": "Importação e modelo Excel",
+      "descricao": "Download de template e importação de lançamentos via planilha na interface.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f010-aba-assinaturas",
+      "titulo": "Aba Assinaturas",
+      "descricao": "CRUD de custos recorrentes no cartão, filtro por cartão, resumo e histórico.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f011-icones-acoes",
+      "titulo": "Ícones padronizados nas ações",
+      "descricao": "Histórico, editar e excluir com os mesmos ícones em Gastos e Assinaturas.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f012-modais-centro",
+      "titulo": "Modais centralizados",
+      "descricao": "Formulários e diálogos exibidos no centro da tela.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f013-aba-features",
+      "titulo": "Aba Features implementadas",
+      "descricao": "Lista cronológica das funcionalidades entregues com data e hora.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f014-limpar-mes",
+      "titulo": "Limpar mês",
+      "descricao": "Move todos os lançamentos do ano/mês atual para a lixeira em lote.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f015-ultima-alteracao-linha",
+      "titulo": "Última alteração na linha",
+      "descricao": "Data e hora da última mudança exibidas em cada lançamento da tabela.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f016-badges-secao",
+      "titulo": "Badges de total pago e investido",
+      "descricao": "Totais por seção e badges consolidados nos painéis de Receitas e Despesas.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f017-caixa-ao-vivo",
+      "titulo": "Atualização ao vivo do caixa",
+      "descricao": "Cards de resumo atualizados ao marcar pago ou investido sem recarregar a página.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f018-destaques-grafico",
+      "titulo": "Destaques do gráfico anual",
+      "descricao": "Melhor mês, pior mês e saída média acima do gráfico de visão anual.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f019-gestao-anos",
+      "titulo": "Gestão de anos",
+      "descricao": "Criar e excluir anos com modais de confirmação e impacto na API.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f020-import-excel-cli",
+      "titulo": "Script import_excel.py",
+      "descricao": "Importação CLI de planilha legada com variáveis PLANILHA_GASTOS e PLANILHA_ANO.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f021-repo-proprio",
+      "titulo": "Repositório gastos-pessoais",
+      "descricao": "Projeto separado com API Flask, frontend estático e persistência JSON.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f022-secoes-tags",
+      "titulo": "Seções dinâmicas e tags",
+      "descricao": "Criar seções no modal, chips de tags com sugestões e listagem via API.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f023-navegacao-abas",
+      "titulo": "Navegação entre abas do app",
+      "descricao": "Gastos mensais, Assinaturas e Features com header e conteúdo contextuais.",
+      "implementado_em": "2026-05-23T00:00:00"
+    },
+    {
+      "id": "f024-toasts",
+      "titulo": "Toasts de feedback",
+      "descricao": "Notificações de sucesso e erro para ações do usuário.",
+      "implementado_em": "2026-05-23T00:00:00"
+    }
+  ]
+}

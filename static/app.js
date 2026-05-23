@@ -41,7 +41,13 @@ async function api(path, options = {}) {
         ...options,
     });
     const data = await res.json().catch(() => ({}));
-    if (!res.ok) throw new Error(data.error || "Erro na requisicao");
+    if (!res.ok) {
+        let msg = data.error;
+        if (!msg && res.status === 404) {
+            msg = "Recurso nao encontrado. Reinicie o servidor com py app.py e atualize a pagina (Ctrl+F5).";
+        }
+        throw new Error(msg || "Erro na requisicao");
+    }
     return data;
 }
 
